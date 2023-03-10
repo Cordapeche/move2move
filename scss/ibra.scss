@@ -1,0 +1,190 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: auto;
+    height: auto;
+    font-family:'Poppins', sans-serif;
+  }
+  
+  #red-text {
+    color: #ff5a6e;
+  }
+  
+  #title-text-separator {
+    width: 5%;
+    margin-top: 1%;
+    border: solid 1px #ff5a6e;
+  }
+  
+  .responsive-menu-link {
+    color: black;
+  }
+  
+  
+  /* ----- General Header CSS ------ */
+  
+  #header {
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  
+  
+  
+  
+  /* Normal Header */
+  
+  .active-header {
+    background-color: white;
+    color: black;
+  }
+  
+  .menu-link {
+    color: white;
+  }
+  
+  .active-menu-links {
+    color: black;
+  }
+  
+  #normal-header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  #header-img {
+    width: 250px;
+    margin-left: 15%;
+  }
+  
+  
+  #nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+  }
+  
+  #nav-bar li {
+    padding: 10px;
+    margin: 12px;
+  }
+  
+  #nav-bar ul,
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Responsive Header */
+  
+  #responsive-header {
+    display: none;
+  }
+  
+  #image-button-black {
+    display: none;
+    border: none;
+  }
+  
+  #image-button-black:hover {
+    cursor: pointer;
+  }
+  
+  #image-button-black:focus {
+    outline: 0;
+  }
+  
+  
+  h1 {
+    font-size: 120px;
+    font-weight:600;
+  }
+  
+  h2 {
+    font-size: 80px;
+    font-weight:600;
+  }
+  
+  .home-text {
+    
+    h1, p, .btn-mtm {
+      text-align: left;
+    }
+  }
+  
+  p {
+    font-size: 20px;
+    
+    max-width: 80%;
+    
+  }
+  .btn-mtm {
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 14px;
+  }
+  .p-y {
+    margin-top: 100px;
+    p{
+      margin-top: 50px;
+      max-width: 80%;
+    }
+  }
+  
+  .p-x {
+    margin-top: 50px;
+   
+  }
+  .card {
+    border: 0;
+  }
+  
+  .card-body {
+    padding-left: 0;
+  }
+  
+  
+  .container-lg {
+    margin-bottom: 100px;
+  }
+  h4 {
+    font-weight: 600;
+    // background-color: #ff5a63;
+  }
+  .p-2 {
+    margin-top: 6px;
+    // background-color: #ff5a63;
+  }
+  
+  .p-3 {
+    margin-top: 100px;
+    // background-color: #ff5a63;
+  }
