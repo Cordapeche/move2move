@@ -11050,7 +11050,7 @@ footer {
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: 90vh;
   }
   #responsive-nav-bar ul {
     list-style: none;
