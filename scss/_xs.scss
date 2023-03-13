@@ -146,9 +146,9 @@ a {
   color: white;
 
   /* Background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size: auto 100%;
-  background-position: center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/couv.png");
+  background-size: auto 100vh;
+  background-position: center right;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
