@@ -10963,6 +10963,9 @@ footer {
     font-weight: 300;
     color: #eb352e;
   }
+  .home-text {
+    margin-top: 200px;
+  }
   .home-text h1, .home-text .h1,
   .home-text p,
   .home-text .btn-mtm {
