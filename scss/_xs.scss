@@ -132,10 +132,8 @@ a {
 
 
 .backimg-mtm {
-  // width: 100vw; 
-  // height: 100vh;
-  // background-color: #ec8375;
-
+  width: 100vw; 
+  height: 100vh;
   /* hero-header flexbox */
   display: flex;
   justify-content: center;
@@ -146,9 +144,9 @@ a {
   color: white;
 
   /* Background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/couv.png");
-  background-size: auto 100vh;
-  background-position: center right;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
+  background-size:auto 100% ;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
