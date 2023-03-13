@@ -147,7 +147,7 @@ a {
 
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size: cover;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -184,7 +184,6 @@ footer {
 
   .home-text {
     margin-top: 200px;
-    // background-color: #eb352e;
     h1,
     p,
     .btn-mtm {
