@@ -131,26 +131,27 @@ a {
 
 
 
-// #hero-header {
-//   width: 100vw; 
-//   height: 100vh;
+.backimg-mtm {
+  // width: 100vw; 
+  // height: 100vh;
+  background-color: #ec8375;
 
-//   /* hero-header flexbox */
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+  /* hero-header flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-//   /* Texy style */
-//   text-align: center;
-//   color: white;
+  /* Texy style */
+  text-align: center;
+  color: white;
 
-//   /* Background image */
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-//   background-size: 50% auto;
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-// }
+  /* Background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
+  background-size: auto 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 
 /* Footer Section */
