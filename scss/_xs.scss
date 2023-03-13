@@ -123,24 +123,6 @@ a {
 
 
 
-
-
-/* ----- Hero Header CSS -----
-
-Tags included:
-
-1. hero-header - main container of the Hero
-
-2. hero-content - the container of the title and description within the hero Section
-
-3. hero-title - the title within the hero section
-
-4. hero-text - the text within the hero section
-
-5. hero-button - the button within the hero section
-
-*/
-
 #hero-header {
   /* width: 100vw; */
   height: 100vh;
@@ -174,42 +156,6 @@ Tags included:
 
 
 
-
-
-
-
-
-
-
-/* ----- Main Content CSS -----
-
-Tags included:
-
-1. features-container - the main container wrapping the "features" elements
-
-2. features-description - container wrapping the title and the description
-
-3. features-title - the main title of the Features
-
-4. features-separator - the line that separates the title from the Description
-
-5. features-text - the main describing the features and services
-
-6. service-features - container wrapping all 4 services
-
-7. feature - the common id applied to the container of all the 4 services
-
-8. feature img - the styling of each image belonging to each feature
-
-9. feature-title - the common id applied to the title of each feature
-
-10. feature p - the styling of each paragraph belonging to each feature
-
-11. feature-button - the common id applied to the button of each feature
-
-12. feature-button:hover - the ":hover" styling of each button
-
-*/
 
 #features-container {
   box-shadow: 2px 2px 15px #bebebe;
@@ -793,6 +739,107 @@ footer {
 /* @Media min-width: 480px */
 @media only screen and (min-width : 200px) and (max-width : 860px) {
 
+
+
+  // My code
+
+
+  h1 {
+    font-size: 120px;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 80px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ff5a63;
+  }
+
+  .home-text {
+
+    h1,
+    p,
+    .btn-mtm {
+      text-align: left;
+    }
+  }
+
+  p {
+    font-size: 20px;
+
+  }
+
+  .p-c {
+    // background-color: #ff5a63;
+    margin-top: 200px;
+  }
+
+  .btn-mtm {
+    padding: 15px;
+    border: 0;
+    font-size: 14px;
+  }
+
+  .p-y {
+    margin-top: 100px;
+
+  }
+
+  .p-x {
+    margin-top: 50px;
+
+  }
+
+  span {
+    color: #ff5a63;
+  }
+
+
+  .card-body {
+    padding-left: 0;
+  }
+
+
+  .container-lg {
+    margin-bottom: 100px;
+
+  }
+
+  h4 {
+    font-weight: 600;
+    // background-color: #ff5a63;
+  }
+
+  .p-2 {
+    margin-top: 6px;
+    // background-color: #ff5a63;
+  }
+
+
+  #normal-header {
+    z-index: 99999;
+  }
+
+  .card-mtm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 0;
+    z-index: -990;
+  }
+
+  .card-mtm img {
+    margin-bottom: 25px;
+  }
+
+  // My code
+
   /* General Elements */
 
   #title-text-separator {
@@ -888,18 +935,15 @@ footer {
 
   #hero-header {
     width: auto;
-    height: 120vh;
-
+    height: 100vh;
     /* hero-header flexbox */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
     /* Texy style */
     text-align: center;
     color: white;
-
     /* Background image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
     background-size: cover;
@@ -907,284 +951,6 @@ footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-
-  #hero-title {
-    font-size: 3.5em;
-  }
-
-  #hero-text {
-    font-size: 1.3em;
-    margin-top: 2%;
-  }
-
-  #hero-button {
-    border: solid 2px white;
-    background-color: inherit;
-    color: white;
-    margin-top: 6%;
-    width: 25%;
-    height: 55px;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-
-  #hero-button:hover {
-    cursor: pointer;
-  }
-
-
-
-  /* Service Features CSS */
-
-  #service-features {
-    display: flex;
-    flex-direction: column;
-    /* Change flow-direction to "column" in the responsive design for the features to stack
-    one on top of another. */
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2%;
-  }
-
-  #features-description {
-    width: 90%;
-  }
-
-  #feature {
-    width: 80%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px #bebebe;
-    box-shadow: 1px 2px 15px #bebebe;
-    margin-top: 10%;
-  }
-
-  #feature-button {
-    border: none;
-    margin-top: 30%;
-    width: 15vh;
-    height: 5vh;
-    border-radius: 15px;
-    background-color: #ff5a6e;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 20%;
-  }
-
-
-
-
-  /* Presentation Section CSS */
-
-  #presentation-container {
-    margin-top: 5%;
-  }
-
-  #presentation-title-description {
-    width: 90%;
-  }
-
-  #section-buttons {
-    margin-top: 5%;
-  }
-
-  #section-content-container {
-    margin: auto;
-    width: 90%;
-  }
-
-  #section-content-container {
-    margin-top: 7%;
-  }
-
-  .product-button {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 40%;
-    padding: 15px;
-  }
-
-  .product-content {
-    display: flex;
-    flex-flow: column;
-    padding: 2%;
-  }
-
-  #content-image {
-    width: 100%;
-    height: 100%;
-  }
-
-  #content-image-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #content-title-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: auto;
-    margin-top: 5%;
-  }
-
-  #content-title-text h1 {
-    margin: auto;
-  }
-
-  #centered-product-description {
-    text-align: center;
-  }
-
-  #content-title-text p {
-    margin-top: 5%;
-  }
-
-  #product-feature-image {
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-  }
-
-  .product-features-list {
-    margin-top: 15%;
-  }
-
-  #first-feature-list {
-    margin-top: 10%;
-  }
-
-  #content-button {
-    margin: auto;
-    margin-top: 10%;
-    width: 35%;
-  }
-
-
-
-
-  /* -- Media Section CSS -- */
-
-  #main-media-container {
-    margin-top: 5%;
-  }
-
-  #media-title-description {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    margin-top: 8%;
-  }
-
-  #media-video-text-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 2% 1% 2% 1%;
-    margin-top: 10%;
-    text-align: center;
-  }
-
-  #media-text {
-    width: 100%;
-  }
-
-  #media-text h2 {
-    margin: auto;
-  }
-
-  #media-text p {
-    margin-top: 6%;
-  }
-
-  #text-video-sperator {
-    height: 1%;
-    width: 80%;
-    margin-top: 10%;
-    margin-bottom: 9%;
-  }
-
-  #media-button {
-    width: 30%;
-    margin: auto;
-    margin-top: 7%;
-  }
-
-  #media-video {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  #iframe-video {
-    width: 50vh;
-    height: 30vh;
-    margin-bottom: 8%;
-  }
-
-
-  /* -- Prices Section CSS -- */
-
-  #prices-section-container {
-    margin-top: 15%;
-  }
-
-  #prices-title-description {
-    width: 90%;
-  }
-
-  #all-prices-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .price-container {
-    width: 90%;
-    margin-top: 15%;
-  }
-
-  #price-container-two {
-    margin-top: 15%;
-  }
-
-
-
-  /* Email Section CSS */
-
-  #newsletter-container {
-    margin-top: 10%;
-  }
-
-  #newsletter-title-description {
-    width: 90%;
-  }
-
-  #email-form label {
-    width: 90%;
-    text-align: center;
-  }
-
-  #email {
-    width: 80%;
-  }
-
 
   /* Footer Section */
 
@@ -1197,17 +963,7 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// ________________________________________________________________________________________________________________________________________________________
 
 
 
@@ -1318,294 +1074,106 @@ footer {
     background-attachment: fixed;
   }
 
-  #hero-title {
-    font-size: 3.5em;
+
+  // My code
+
+
+  h1 {
+    font-size: 120px;
+    font-weight: 600;
   }
 
-  #hero-text {
-    font-size: 1.3em;
-    margin-top: 2%;
+  h2 {
+    font-size: 80px;
+    font-weight: 600;
   }
 
-  #hero-button {
-    border: solid 2px white;
-    background-color: inherit;
-    color: white;
-    margin-top: 6%;
-    width: 25%;
-    height: 55px;
-    font-size: 15px;
-    border-radius: 10px;
+  h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ff5a63;
   }
 
-  #hero-button:hover {
-    cursor: pointer;
+  .home-text {
+
+    h1,
+    p,
+    .btn-mtm {
+      text-align: left;
+    }
   }
 
+  p {
+    font-size: 20px;
 
-
-  /* Service Features CSS */
-
-  #service-features {
-    display: flex;
-    flex-flow: row;
-    /* Change flow-direction to "column" in the responsive design for the features to stack
-    one on top of another. */
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 2%;
   }
 
-  #features-description {
-    width: 90%;
+  .p-c {
+    // background-color: #ff5a63;
+    margin-top: 200px;
   }
 
-  #feature {
-    width: 30%;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px #bebebe;
-    box-shadow: 1px 2px 15px #bebebe;
-    margin-top: 10%;
-  }
-
-  #feature-button {
-    border: none;
-    margin-top: 30%;
-    width: 15vh;
-    height: 5vh;
-    border-radius: 15px;
-    background-color: #ff5a6e;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 20%;
-  }
-
-
-
-
-  /* Presentation Section CSS */
-
-  #presentation-container {
-    margin-top: 5%;
-    width: 80%;
-    margin: auto;
-  }
-
-  #presentation-title-description {
-    width: 90%;
-  }
-
-  #section-buttons {
-    margin-top: 5%;
-  }
-
-  #section-content-container {
-    margin: auto;
-    width: 90%;
-  }
-
-  #section-content-container {
-    margin-top: 7%;
-  }
-
-  .product-button {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 40%;
+  .btn-mtm {
     padding: 15px;
+    border: 0;
+    font-size: 14px;
   }
 
-  .product-content {
+  .p-y {
+    margin-top: 100px;
+
+  }
+
+  .p-x {
+    margin-top: 50px;
+
+  }
+
+  span {
+    color: #ff5a63;
+  }
+
+
+  .card-body {
+    padding-left: 0;
+  }
+
+
+  .container-lg {
+    margin-bottom: 100px;
+
+  }
+
+  h4 {
+    font-weight: 600;
+    // background-color: #ff5a63;
+  }
+
+  .p-2 {
+    margin-top: 6px;
+    // background-color: #ff5a63;
+  }
+
+
+  #normal-header {
+    z-index: 99999;
+  }
+
+  .card-mtm {
+    position: relative;
     display: flex;
-    flex-flow: column;
-    padding: 2%;
+    flex-direction: column;
+    min-width: 0;
+    border: 0;
+    z-index: -990;
   }
 
-  #content-image {
-    width: 100%;
-    height: 100%;
+  .card-mtm img {
+    margin-bottom: 25px;
   }
 
-  #content-image-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  #content-title-text {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin: auto;
-    margin-top: 5%;
-  }
-
-  #content-title-text h1 {
-    margin: auto;
-  }
-
-  #centered-product-description {
-    text-align: center;
-  }
-
-  #content-title-text p {
-    margin-top: 5%;
-  }
-
-  #product-feature-image {
-    justify-content: center;
-    align-items: center;
-    width: 8%;
-  }
-
-  .product-features-list {
-    margin-top: 15%;
-  }
-
-  #first-feature-list {
-    margin-top: 10%;
-  }
-
-  #content-button {
-    margin: auto;
-    margin-top: 10%;
-    width: 35%;
-  }
-
-
-
-
-  /* -- Media Section CSS -- */
-
-  #main-media-container {
-    margin-top: 5%;
-  }
-
-  #media-title-description {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 90%;
-    margin-top: 8%;
-  }
-
-  #media-video-text-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 2% 1% 2% 1%;
-    margin-top: 10%;
-    text-align: center;
-  }
-
-  #media-text {
-    width: 100%;
-  }
-
-  #media-text h2 {
-    margin: auto;
-  }
-
-  #media-text p {
-    margin-top: 6%;
-  }
-
-  #text-video-sperator {
-    height: 1%;
-    width: 80%;
-    margin-top: 10%;
-    margin-bottom: 9%;
-  }
-
-  #media-button {
-    width: 35%;
-    margin: auto;
-    margin-top: 7%;
-  }
-
-  #media-video {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  #iframe-video {
-    width: 80vh;
-    height: 50vh;
-    margin-bottom: 9%;
-  }
-
-
-  /* -- Prices Section CSS -- */
-
-  #prices-section-container {
-    margin-top: 15%;
-  }
-
-  #prices-title-description {
-    width: 90%;
-  }
-
-  #all-prices-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .price-container {
-    width: 50%;
-    margin-top: 15%;
-  }
-
-  #price-container-two {
-    margin-top: 15%;
-  }
-
-  .price-container button {
-    width: 35%;
-  }
-
-
-
-  /* Email Section CSS */
-
-  #newsletter-container {
-    margin-top: 10%;
-  }
-
-  #newsletter-title-description {
-    width: 90%;
-  }
-
-  #email-form label {
-    width: 90%;
-    text-align: center;
-  }
-
-  #email {
-    width: 80%;
-  }
-
+  // My code
 }
-
-
-
 
 
 // My code
@@ -1704,3 +1272,5 @@ h4 {
 .card-mtm img {
   margin-bottom: 25px;
 }
+
+// My code
