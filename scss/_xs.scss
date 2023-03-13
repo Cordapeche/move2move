@@ -1,3 +1,11 @@
+$bleuClair: #161e3f;
+$bleu: #07163e;
+$orange: #eb352e;
+$orangeClaire: #ec8375;
+
+// _______________________________________________________________________________________________________________________________________________
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +22,7 @@ body {
 }
 
 #red-text {
-  color: #ff5a6e;
+  color: $orange;
 }
 
 #title-text-separator {
@@ -51,7 +59,7 @@ body {
 
 .active-header {
   background-color: white;
-  color: black;
+  color: $bleu;
 }
 
 .menu-link {
@@ -59,7 +67,7 @@ body {
 }
 
 .active-menu-links {
-  color: black;
+  color: $bleu;
 }
 
 #normal-header {
@@ -145,589 +153,6 @@ a {
   background-attachment: fixed;
 }
 
-#hero-title {
-  font-size: 3.5em;
-}
-
-#hero-text {
-  font-size: 1.3em;
-  margin-top: 2%;
-}
-
-
-
-
-#features-container {
-  box-shadow: 2px 2px 15px #bebebe;
-  margin-top: 5%;
-  padding: 2%;
-}
-
-#service-features {
-  display: flex;
-  flex-direction: row;
-  /* Change flow-direction to "column" in the responsive design for the features to stack
-  one on top of another. */
-  justify-content: space-around;
-  margin-top: 2%;
-  padding-bottom: 3%;
-}
-
-#features-description {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  margin-top: 2%;
-  padding: 1%;
-  display: flex;
-  width: 60%;
-}
-
-#features-description h1 {
-  font-size: 45px;
-}
-
-#features-description p {
-  padding: 1%;
-  margin-top: 1%;
-}
-
-#feature {
-  width: 20%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px #bebebe;
-  box-shadow: 1px 2px 15px #bebebe;
-}
-
-#feature img {
-  max-width: 30%;
-  max-height: 30%;
-  padding-top: 5%;
-}
-
-#feature-title {
-  margin-top: 5%;
-}
-
-#feature p {
-  width: 70%;
-  margin-top: 5%;
-}
-
-#feature-button {
-  border: none;
-  margin-top: 30%;
-  width: 12vh;
-  height: 5vh;
-  border-radius: 15px;
-  background-color: #ff5a6e;
-  color: white;
-  font-size: 16px;
-  margin-bottom: 20%;
-}
-
-#feature-button:hover {
-  background-color: #ff7b8b;
-  cursor: pointer;
-}
-
-
-
-
-
-/* ----- Product Presentation CSS -----
-
-CSS for the section of the website that features each "product" available.
-
-Tags included:
-
-1. #presentation-container - the general container where everything is
-
-2. #presentation-title-description - the container in which the title and the description are
-
-3. #presentation-title - the main title of the section
-
-4. #presentation-separator - the CSS for the separator between the main title and the description
-
-5. #presentation-description - the main description of the section
-
-6. #section-buttons - the div containing the main product buttons
-
-7. .product-buttons - the general class used to style the buttons
-
-8. .product-button:hover - the CSS that changes the style of a button when hoevered
-
-9. .product-button:focus - the CSS that removes the outlife of the buttons when clicked
-
-10. .product-button-active - the CSS for the class that is added with jQuery to buttons when sections appear/disappear
-
-11. #section-content-container - the main container containing all the subsections
-
-12. .product-content - a general class applying some CSS to each subsection container
-
-13. #content-image - general id used to apply CSS to each image in the subsections
-
-14. #content-image-container - general id used to apply CSS to each div containing the main image of each subsection
-
-15. #content-title-text - general ID used to style the div containing each subsection's title and description
-
-16. #content-title-text p - selector used to add a little distance between the paragraph and the title
-
-17. .product-features-list - a general class used to style the feature list of each subsection
-
-18. #first-feature-list - a unique ID used to stylize only the first container with that ID.
-
-19. #product-feature-image - genral ID used to style the container of each product image1
-
-20. #correct-icon - general id of all the images used to replace UL bulletpoints in the "list" with features of each product
-
-21. #inside-features-title-text - general ID of the features of the products within each subsection
-
-22. #content-button - general ID of each button inside each product subsection
-
-23. #content-button:hover - general ID of the hover styling of each button inside the products subsection
-
-
-*/
-
-#presentation-container {
-  display: flex;
-  flex-flow: column;
-}
-
-#presentation-title-description {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-  margin-top: 5%;
-  width: 60%;
-}
-
-#presentation-title-description h1 {
-  font-size: 45px;
-}
-
-#presentation-title-description p {
-  margin-top: 1%;
-}
-
-#section-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.product-button {
-  border: none;
-  border-radius: 10px;
-  background-color: inherit;
-  box-shadow: 1px 2px 15px #bebebe;
-  padding: 15px;
-  width: 10%;
-  margin: 2%;
-  font-size: 15px;
-}
-
-.product-button:hover {
-  cursor: pointer;
-}
-
-.product-button:focus {
-  outline: 0;
-}
-
-.product-button-active {
-  background-color: #ff5a6e;
-  color: white;
-}
-
-
-
-
-/* -- SUBSECTION CSS: Section Content CSS -- */
-
-#section-content-container {
-  margin: auto;
-  width: 75%;
-}
-
-.product-content {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  padding: 2%;
-}
-
-#content-image {
-  width: 100%;
-  height: 100%;
-  width: 70%;
-  height: auto;
-}
-
-#content-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-#content-title-text {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  width: 50%;
-  padding: 1%;
-}
-
-#content-title-text p {
-  margin-top: 2%;
-}
-
-.product-features-list {
-  display: flex;
-  flex-flow: row;
-  align-items: flex-start;
-  margin-top: 5%;
-}
-
-#first-feature-list {
-  margin-top: 0;
-}
-
-#product-feature-image {
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 10%;
-}
-
-#correct-icon {
-  width: 100%;
-  height: 100%;
-}
-
-#inside-features-title-text {
-  display: flex;
-  flex-flow: column;
-  margin-left: 2%;
-}
-
-#content-button {
-  border: none;
-  border-radius: 10px;
-  background-color: #ff5a6e;
-  box-shadow: 1px 2px 15px #bebebe;
-  padding: 15px;
-  width: 25%;
-  margin-top: 6%;
-  font-size: 16px;
-  color: white;
-}
-
-#content-button:hover {
-  cursor: pointer;
-  background-color: #ff7b8b;
-}
-
-
-
-
-
-
-#main-media-container {
-  box-shadow: 2px 2px 15px #bebebe;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-#media-title-description {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 4%;
-  width: 90%;
-}
-
-#media-title-description h1 {
-  font-size: 45px;
-}
-
-#media-title-description p {
-  margin-top: 1%;
-}
-
-#media-video-text-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 75%;
-  padding: 3% 2% 3% 2%;
-  /* background-color: #f5f5f5; */
-  border-radius: 10px;
-}
-
-#media-text {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  width: 40%;
-  height: auto;
-}
-
-#media-text h2 {
-  font-size: 30px;
-}
-
-#media-text p {
-  font-size: 17px;
-  margin-top: 3%;
-}
-
-#text-video-sperator {
-  height: 20vh;
-  border: solid 0.5px #e1e1e1;
-}
-
-#media-button {
-  border: solid 1px #c1c1c1;
-  border-radius: 10px;
-  background-color: inherit;
-  box-shadow: 1px 2px 2px #bebebe;
-  padding: 15px;
-  width: 25%;
-  margin-top: 5%;
-  font-size: 15px;
-  color: black;
-}
-
-#media-button:hover {
-  cursor: pointer;
-  background-color: white;
-  background-color: #ff5a6e;
-  color: white;
-}
-
-#media-video {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#video {
-  width: 60vh;
-  height: 35vh;
-}
-
-
-
-
-
-
-#prices-section-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
-  margin: auto;
-  margin-top: 3%;
-}
-
-#prices-title-description {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 60%;
-}
-
-#prices-title-description h1 {
-  font-size: 45px;
-}
-
-#prices-separator {
-  width: 5%;
-  margin-top: 2%;
-  border: solid 1px #ff5a63;
-}
-
-#prices-title-description p {
-  margin-top: 1%;
-}
-
-#all-prices-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-}
-
-.price-container {
-  box-shadow: 2px 2px 15px #bebebe;
-  text-align: center;
-  margin-top: 7%;
-  width: 27%;
-}
-
-.price-container h1 {
-  color: #ff5a63;
-  font-size: 45px;
-  margin-top: 6%;
-}
-
-.price-container h2 {
-  color: #323a45;
-  font-size: 40px;
-  margin-top: 4%;
-}
-
-.price-container p {
-  margin-top: 4%;
-  font-size: 17px;
-}
-
-.price-container hr {
-  margin: auto;
-  margin-top: 4%;
-  margin-bottom: 4%;
-  width: 70%;
-  border: solid 0.5px #c1c1c1;
-}
-
-.price-container ul {
-  list-style: none;
-}
-
-.price-container li {
-  padding: 3%;
-}
-
-.price-container button {
-  border: none;
-  border-radius: 10px;
-  background-color: #ff5a6e;
-  box-shadow: 1px 2px 15px #bebebe;
-  padding: 15px;
-  width: 30%;
-  margin-top: 6%;
-  font-size: 16px;
-  color: white;
-  margin-bottom: 6%;
-}
-
-.price-container button:hover {
-  cursor: pointer;
-  background-color: #ff7b8b;
-}
-
-#price-container-two {
-  margin-top: 4%;
-}
-
-
-
-
-/* Newsletter Section CSS
-
-Tags included:
-
-1. #newsletter-container - main newsletter section container
-
-2. #newsletter-title-description - container with the main title and description
-
-3. #newsletter-title-description h1 - styling for the main title
-
-4. #newsletter-input-container - container with the form and input elements
-
-5. #email-form - the id given to the <form> tag
-
-6. #email-form label - styling of the label before the <input> tag
-
-7. #email-input - id of the <input> tag where the email will be written
-
-8. #email-form button - styling of the "submit" button after the <input> tag
-
-9. #email-form button:hover - styling for the hover state of the button
-
-*/
-
-#newsletter-container {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-}
-
-#newsletter-title-description {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 60%;
-}
-
-#newsletter-title-description h1 {
-  font-size: 45px;
-}
-
-#email-input-container {
-  margin-top: 1%
-}
-
-#email-form {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#email-form label {
-  font-size: 20px;
-}
-
-#email {
-  font-size: 18px;
-  margin-top: 4%;
-  padding: 3%;
-  width: 150%;
-}
-
-#submit {
-  border: none;
-  border-radius: 10px;
-  background-color: #ff5a6e;
-  box-shadow: 1px 2px 15px #bebebe;
-  font-size: 16px;
-  color: white;
-  margin-top: 5%;
-  padding: 15px;
-  width: 40%;
-}
-
-#submit:hover {
-  cursor: pointer;
-  background-color: #ff7b8b;
-}
-
-
 
 /* Footer Section */
 
@@ -737,31 +162,27 @@ footer {
 }
 
 /* @Media min-width: 480px */
-@media only screen and (min-width : 200px) and (max-width : 860px) {
-
-
+ @media only screen and (min-width : 200px) and (max-width : 860px) {
 
   // My code
 
-
   h1 {
-    font-size: 120px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 300;
   }
 
   h2 {
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 300;
   }
 
   h3 {
-    font-size: 35px;
-    font-weight: 600;
-    color: #ff5a63;
+    font-size: 17px;
+    font-weight: 300;
+    color: $orange;
   }
 
   .home-text {
-
     h1,
     p,
     .btn-mtm {
@@ -770,7 +191,7 @@ footer {
   }
 
   p {
-    font-size: 20px;
+    font-size: 10px;
 
   }
 
@@ -794,11 +215,6 @@ footer {
     margin-top: 50px;
 
   }
-
-  span {
-    color: #ff5a63;
-  }
-
 
   .card-body {
     padding-left: 0;
@@ -859,7 +275,7 @@ footer {
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     min-height: 80px;
     margin: auto;
   }
@@ -886,6 +302,9 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    
   }
 
   #responsive-nav-bar ul {
@@ -958,7 +377,7 @@ footer {
     margin-top: 10%;
   }
 
-}
+ }
 
 
 
@@ -973,7 +392,7 @@ footer {
 
   /* Navigation CSS */
   #header {
-    background: white;
+    background: red;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -1007,6 +426,7 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
+    height: 100vh;
   }
 
   #responsive-nav-bar ul {
@@ -1081,6 +501,7 @@ footer {
   h1 {
     font-size: 120px;
     font-weight: 600;
+    color: aqua;
   }
 
   h2 {
@@ -1129,10 +550,6 @@ footer {
 
   }
 
-  span {
-    color: #ff5a63;
-  }
-
 
   .card-body {
     padding-left: 0;
@@ -1179,10 +596,7 @@ footer {
 // My code
 
 
-h1 {
-  font-size: 120px;
-  font-weight: 600;
-}
+
 
 h2 {
   font-size: 80px;
@@ -1193,15 +607,6 @@ h3 {
   font-size: 35px;
   font-weight: 600;
   color: #ff5a63;
-}
-
-.home-text {
-
-  h1,
-  p,
-  .btn-mtm {
-    text-align: left;
-  }
 }
 
 p {
@@ -1231,7 +636,7 @@ p {
 }
 
 span {
-  color: #ff5a63;
+  color: $orange;
 }
 
 
