@@ -10951,7 +10951,7 @@ footer {
 /* @Media min-width: 480px */
 @media only screen and (min-width: 200px) and (max-width: 860px) {
   h1, .h1 {
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 600;
   }
   h2, .h2 {
