@@ -10926,7 +10926,6 @@ a {
 #hero-header {
   /* width: 100vw; */
   height: 100vh;
-  box-shadow: 3px 3px 2px #bebebe;
   /* hero-header flexbox */
   display: flex;
   justify-content: center;
@@ -10936,7 +10935,7 @@ a {
   color: white;
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size: auto 100%;
+  background-size: 50% auto;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11099,7 +11098,7 @@ footer {
     flex-wrap: wrap;
     /* Background image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

@@ -134,7 +134,6 @@ a {
 #hero-header {
   /* width: 100vw; */
   height: 100vh;
-  box-shadow: 3px 3px 2px #bebebe;
 
   /* hero-header flexbox */
   display: flex;
@@ -147,7 +146,7 @@ a {
 
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size: auto 100%;
+  background-size: 50% auto;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -162,7 +161,7 @@ footer {
 }
 
 /* @Media min-width: 480px */
- @media only screen and (min-width : 200px) and (max-width : 860px) {
+@media only screen and (min-width : 200px) and (max-width : 860px) {
 
   // My code
 
@@ -184,6 +183,7 @@ footer {
 
   .home-text {
     margin-top: 200px;
+
     h1,
     p,
     .btn-mtm {
@@ -303,9 +303,9 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: space-around;    
+    justify-content: space-around;
     height: 100vh;
-    
+
   }
 
   #responsive-nav-bar ul {
@@ -363,7 +363,7 @@ footer {
     flex-wrap: wrap;
     /* Background image */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-    background-size: cover;
+    background-size: auto 100%;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -375,7 +375,7 @@ footer {
     margin-top: 10%;
   }
 
- }
+}
 
 
 
