@@ -10819,9 +10819,12 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: auto;
-  height: auto;
   font-family: "Poppins", sans-serif;
 }
 
@@ -10930,7 +10933,7 @@ a {
   color: white;
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11044,9 +11047,6 @@ footer {
     justify-content: flex-start;
     height: 100vh;
   }
-  .contactus {
-    margin-top: 20%;
-  }
   #responsive-nav-bar ul {
     list-style: none;
   }
@@ -11081,7 +11081,7 @@ footer {
     padding: 2%;
   }
   /* Hero CSS */
-  #hero-header {
+  .backimg-mtm {
     width: auto;
     height: 100vh;
     /* hero-header flexbox */
@@ -11104,16 +11104,16 @@ footer {
 }
 @media only screen and (min-width: 860px) and (max-width: 1280px) {
   h1, .h1 {
-    font-size: 120px;
+    font-size: 70px;
     font-weight: 600;
   }
   h2, .h2 {
     color: #07163e;
     font-size: 50px;
-    font-weight: 40px;
+    font-size: 30px;
   }
   h3, .h3 {
-    font-size: 35px;
+    font-size: 17px;
     font-weight: 300;
     color: #eb352e;
   }
@@ -11236,7 +11236,7 @@ footer {
     padding: 2%;
   }
   /* Hero CSS */
-  #hero-header {
+  .backimg-mtm {
     width: auto;
     height: 120vh;
     /* hero-header flexbox */
