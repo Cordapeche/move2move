@@ -132,7 +132,7 @@ a {
 
 
 .backimg-mtm {
-  width: 100vw; 
+  width: 100vw;
   height: 100vh;
   /* hero-header flexbox */
   display: flex;
@@ -145,7 +145,7 @@ a {
 
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size:auto 100% ;
+  background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -162,7 +162,9 @@ footer {
 /* @Media min-width: 480px */
 @media only screen and (min-width : 200px) and (max-width : 860px) {
 
+
   // My code
+
 
   h1 {
     font-size: 70px;
@@ -171,7 +173,8 @@ footer {
 
   h2 {
     color: $bleu;
-    font-size: 40px;
+    font-size: 50px;
+    font-size: 30px;
   }
 
   h3 {
@@ -191,8 +194,8 @@ footer {
   }
 
   p {
+    margin-top: 20px;
     font-size: 10px;
-
   }
 
   .p-c {
@@ -294,17 +297,12 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    height: 100vh;
-
-  }
-
-  #responsive-nav-bar:first-child {
     justify-content: flex-start;
-
+    height: 100vh;
   }
-  .contactus {
-    margin: 30%;
 
+  .contactus {
+    margin-top: 20%;
   }
 
   #responsive-nav-bar ul {
@@ -385,214 +383,242 @@ footer {
 
 
 
-// @media only screen and (min-width : 860px) and (max-width : 1280px) {
+@media only screen and (min-width : 860px) and (max-width : 1280px) {
 
 
-//   /* Navigation CSS */
-//   #header {
-//     background: red;
-//     position: fixed;
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-flow: row;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 100%;
-//     min-height: 80px;
-//     margin: auto;
-//   }
+  // My code
 
 
-//   #normal-header {
-//     display: none;
-//   }
+  h1 {
+    font-size: 120px;
+    font-weight: 600;
+  }
 
-//   #responsive-header {
-//     display: flex;
-//     flex-flow: column;
-//     width: 100%;
-//     margin: auto;
-//   }
+  h2 {
+    color: $bleu;
+    font-size: 50px;
+    font-weight: 40px;
+  }
 
-//   #responsive-logo-button {
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 1% 0 1% 0;
-//   }
+  h3 {
+    font-size: 35px;
+    font-weight: 300;
+    color: $orange;
+  }
 
-//   #responsive-nav-bar {
-//     display: flex;
-//     flex-flow: column;
-//     align-items: center;
-//     height: 100vh;
-//   }
+  .home-text {
+    margin-top: 200px;
 
-//   #responsive-nav-bar ul {
-//     list-style: none;
-//   }
+    h1,
+    p,
+    .btn-mtm {
+      text-align: left;
+    }
+  }
 
-//   #responsive-nav-bar li {
-//     text-align: center;
-//     font-size: 23px;
-//     margin-top: 40%;
-//   }
+  p {
+    margin-top: 20px;
+    font-size: 10px;
+  }
 
-//   #responsive-first-item {
-//     margin-top: 0;
-//     padding: 0;
-//   }
+  .p-c {
+    // background-color: #ff5a63;
+    margin-top: 200px;
+  }
 
-//   #header-img-black {
-//     margin-left: 5%;
-//     margin-top: 3%;
-//     width: 50%;
-//     height: auto;
-//   }
+  .btn-mtm {
+    padding: 15px;
+    border: 0;
+    font-size: 14px;
+  }
 
-//   #dropdown-button-black {
-//     display: block;
-//     width: 55%;
-//     height: auto;
-//     margin: 0;
-//     padding: 0;
-//   }
+  .p-y {
+    margin-top: 100px;
 
+  }
 
-//   #image-button-black {
-//     border: none;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: inherit;
-//     padding: 2%;
-//   }
+  .p-x {
+    margin-top: 50px;
+
+  }
 
 
-//   /* Hero CSS */
-
-//   #hero-header {
-//     width: auto;
-//     height: 120vh;
-
-//     /* hero-header flexbox */
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-wrap: wrap;
-
-//     /* Texy style */
-//     text-align: center;
-//     color: white;
-
-//     /* Background image */
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-//     background-size: cover;
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     background-attachment: fixed;
-//   }
+  .card-body {
+    padding-left: 0;
+  }
 
 
-//   // My code
+  .container-lg {
+    margin-bottom: 100px;
+
+  }
+
+  h4 {
+    font-weight: 600;
+    // background-color: #ff5a63;
+  }
+
+  .p-2 {
+    margin-top: 6px;
+    // background-color: #ff5a63;
+  }
 
 
-//   h1 {
-//     font-size: 120px;
-//     font-weight: 600;
-//     color: aqua;
-//   }
+  #normal-header {
+    z-index: 99999;
+  }
 
-//   h2 {
-//     font-size: 80px;
-//     font-weight: 600;
-//   }
+  .card-mtm {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 0;
+    z-index: -990;
+  }
 
-//   h3 {
-//     font-size: 35px;
-//     font-weight: 600;
-//     color: #ff5a63;
-//   }
+  .card-mtm img {
+    margin-bottom: 25px;
+  }
 
-//   .home-text {
+  // My code
 
-//     h1,
-//     p,
-//     .btn-mtm {
-//       text-align: left;
-//     }
-//   }
-
-//   p {
-//     font-size: 20px;
-
-//   }
-
-//   .p-c {
-//     // background-color: #ff5a63;
-//     margin-top: 200px;
-//   }
-
-//   .btn-mtm {
-//     padding: 15px;
-//     border: 0;
-//     font-size: 14px;
-//   }
-
-//   .p-y {
-//     margin-top: 100px;
-
-//   }
-
-//   .p-x {
-//     margin-top: 50px;
-
-//   }
+  /* Navigation CSS */
+  #header {
+    background: white;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    margin: auto;
+  }
 
 
-//   .card-body {
-//     padding-left: 0;
-//   }
+  #normal-header {
+    display: none;
+  }
+
+  #responsive-header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  #responsive-logo-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 1% 0;
+  }
+
+  #responsive-nav-bar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #responsive-nav-bar ul {
+    list-style: none;
+  }
+
+  #responsive-nav-bar li {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 40%;
+  }
+
+  #responsive-first-item {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #header-img-black {
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 50%;
+    height: auto;
+  }
+
+  #dropdown-button-black {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
 
 
-//   .container-lg {
-//     margin-bottom: 100px;
-
-//   }
-
-//   h4 {
-//     font-weight: 600;
-//     // background-color: #ff5a63;
-//   }
-
-//   .p-2 {
-//     margin-top: 6px;
-//     // background-color: #ff5a63;
-//   }
+  #image-button-black {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    padding: 2%;
+  }
 
 
-//   #normal-header {
-//     z-index: 99999;
-//   }
+  /* Hero CSS */
 
-//   .card-mtm {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     min-width: 0;
-//     border: 0;
-//     z-index: -990;
-//   }
+  #hero-header {
+    width: auto;
+    height: 120vh;
 
-//   .card-mtm img {
-//     margin-bottom: 25px;
-//   }
+    /* hero-header flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-//   // My code
-// }
+    /* Texy style */
+    text-align: center;
+    color: white;
+
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+  
+}
 
 
 // My code
+h1 {
+  font-size: 120px;
+  font-weight: 600;
+}
 
+h2 {
+  color: $bleu;
+  font-size: 50px;
+  font-weight: 40px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 300;
+  color: $orange;
+}
+
+.home-text {
+  margin-top: 200px;
+
+  h1,
+  p,
+  .btn-mtm {
+    text-align: left;
+  }
+}
 
 p {
   font-size: 20px;
