@@ -10958,6 +10958,7 @@ p {
   padding: 15px;
   border: 0;
   font-size: 14px;
+  z-index: 9999;
 }
 .btn-mtm a {
   text-decoration: none;
@@ -11008,6 +11009,40 @@ h4, .h4 {
   overflow: hidden;
   background-size: cover;
   z-index: -9999;
+}
+
+footer {
+  background-color: #161e3f;
+  color: white;
+}
+
+.mtm-footer {
+  text-align: left;
+}
+
+.container-lg {
+  margin-bottom: 0;
+}
+
+.mtm-footer-row {
+  padding: 50px;
+}
+
+.modal button.close {
+  right: 0;
+  outline: 0;
+}
+
+#gallery-lightbox img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+#gallery-lightbox img:hover {
+  opacity: 0.9;
+  transition: 0.5s ease-out;
 }
 
 @media (min-width: 992px) {
