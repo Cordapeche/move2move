@@ -16,188 +16,192 @@ html {
 body {
   width: auto;
   height: auto;
-  font-family:'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 #red-text {
-    color: #ff5a6e;
+  color: #ff5a6e;
 }
- 
+
 
 // MENU _____________________________________________________
 
 /* Navigation CSS */
 #header {
-background: white;
-position: fixed;
-display: flex;
-flex-wrap: wrap;
-flex-flow: row;
-justify-content: space-between;
-align-items: center;
-width: 100vw;
-min-height: 80px;
-margin: auto;
+  background: white;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  min-height: 80px;
+  margin: auto;
 }
 
 
 #normal-header {
-display: none;
+  display: none;
 }
 
 #responsive-header {
-display: flex;
-flex-flow: column;
-width: 100%;
-margin: auto;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
 }
 
 #responsive-logo-button {
-display: flex;
-justify-content: space-between;
-padding: 1% 0 1% 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0 1% 0;
 }
 
 #responsive-nav-bar {
-display: flex;
-flex-flow: column;
-align-items: center;
-justify-content: flex-start;
-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
 }
 
 
 
 #responsive-nav-bar ul {
-list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 #responsive-nav-bar li {
-text-align: center;
-font-size: 15px;
-margin-top: 40%;
-color: $bleu;
-
-a{
-  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40%;
   color: $bleu;
 
-}
+  a {
+    text-decoration: none;
+    color: $bleu;
+  }
+
 }
 
 #responsive-first-item {
-margin-top: 0;
-padding: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 #header-img-black {
-margin-left: 5%;
-margin-top: 3%;
-width: 50%;
-height: auto;
+  margin-left: 5%;
+  margin-top: 3%;
+  width: 50%;
+  height: auto;
 }
 
 #dropdown-button-black {
-display: block;
-width: 55%;
-height: auto;
-margin: 0;
-padding: 0;
+  display: block;
+  width: 55%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 
 #image-button-black {
-border: none;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: inherit;
-padding: 2%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: 2%;
 }
 
 // MENU END __________________________________________________________________________
 
 h1 {
-font-size: 60px;
-font-weight: 600;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 h2 {
-color: $bleu;
-font-size: 40px;
-font-weight: 40px;
+  color: $bleu;
+  font-size: 40px;
+  font-weight: 40px;
 }
 
 h3 {
-font-size: 20px;
-font-weight: 300;
-color: $orange;
+  font-size: 20px;
+  font-weight: 300;
+  color: $orange;
 }
 
 .home-text {
-margin-top: 200px;
+  margin-top: 200px;
 
-h1,
-p,
-.btn-mtm {
-  text-align: left;
-}
+  h1,
+  p,
+  .btn-mtm {
+    text-align: left;
+  }
 }
 
 p {
-font-size: 20px;
+  font-size: 20px;
 
 }
 
 .p-c {
-// background-color: #ff5a63;
-margin-top: 200px;
+  // background-color: #ff5a63;
+  margin-top: 200px;
 }
 
 .btn-mtm {
-padding: 15px;
-border: 0;
-font-size: 14px;
-a {
-  text-decoration: none;
-  color: $bleu;
-}
+  padding: 15px;
+  border: 0;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    color: $bleu;
+  }
 }
 
 .p-y {
-margin-top: 100px;
+  margin-top: 100px;
 
 }
 
 .p-x {
-margin-top: 50px;
+  margin-top: 50px;
 
 }
 
 span {
-color: $orange;
+  color: $orange;
 }
 
 
 .card-body {
-padding-left: 0;
+  padding-left: 0;
 }
 
 
 .container-lg {
-margin-bottom: 100px;
+  margin-bottom: 100px;
 
 }
 
 h4 {
-font-weight: 600;
-// background-color: #ff5a63;
+  font-weight: 600;
+  // background-color: #ff5a63;
 }
 
 .p-2 {
-margin-top: 6px;
-// background-color: #ff5a63;
+  margin-top: 6px;
+  // background-color: #ff5a63;
 }
 
 .backimg-mtm {

@@ -10856,6 +10856,7 @@ body {
   display: flex;
   flex-flow: column;
   width: 100%;
+  justify-content: center;
   margin: auto;
 }
 
@@ -10870,16 +10871,18 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: flex-start;
+  width: 100vw;
   height: 100vh;
 }
 
 #responsive-nav-bar ul {
+  padding: 0;
   list-style: none;
 }
 
 #responsive-nav-bar li {
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 40%;
   color: #07163e;
 }
