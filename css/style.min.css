@@ -11045,6 +11045,12 @@ footer {
   transition: 0.5s ease-out;
 }
 
+.mtm-img img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media (min-width: 992px) {
   #red-text {
     color: #eb352e;
