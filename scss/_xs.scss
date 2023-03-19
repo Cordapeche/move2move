@@ -3,8 +3,6 @@ $bleu: #07163e;
 $orange: #eb352e;
 $orangeClaire: #ec8375;
 
-// _______________________________________________________________________________________________________________________________________________
-
 
 html {
   scroll-behavior: smooth;
@@ -15,674 +13,202 @@ html {
   padding: 0;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif;
+  width: auto;
+  height: auto;
+  font-family:'Poppins', sans-serif;
 }
+
 
 #red-text {
-  color: $orange;
+    color: #ff5a6e;
 }
+ 
 
-#title-text-separator {
-  width: 5%;
-  margin-top: 1%;
-  border: solid 1px #ff5a6e;
-}
+// MENU _____________________________________________________
 
-.responsive-menu-link {
-  color: black;
-}
-
-
-/* ----- General Header CSS ------ */
-
+/* Navigation CSS */
 #header {
-  position: fixed;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-  font-size: 19px;
-  min-height: 100px;
+background: white;
+position: fixed;
+display: flex;
+flex-wrap: wrap;
+flex-flow: row;
+justify-content: space-between;
+align-items: center;
+width: 100vw;
+min-height: 80px;
+margin: auto;
 }
 
-
-
-
-
-/* Normal Header */
-
-.active-header {
-  background-color: white;
-  color: $bleu;
-}
-
-.menu-link {
-  color: white;
-}
-
-.active-menu-links {
-  color: $bleu;
-}
 
 #normal-header {
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  font-size: 19px;
-  min-height: 100px;
+display: none;
 }
-
-#header-img {
-  width: 250px;
-  margin-left: 15%;
-}
-
-
-
-#nav-bar ul {
-  list-style: none;
-  display: flex;
-  flex-flow: row;
-}
-
-#nav-bar li {
-  padding: 10px;
-  margin: 12px;
-}
-
-#nav-bar ul,
-a {
-  text-decoration: none;
-}
-
-
-
-
-
-
-/* Responsive Header */
 
 #responsive-header {
-  display: none;
+display: flex;
+flex-flow: column;
+width: 100%;
+margin: auto;
 }
+
+#responsive-logo-button {
+display: flex;
+justify-content: space-between;
+padding: 1% 0 1% 0;
+}
+
+#responsive-nav-bar {
+display: flex;
+flex-flow: column;
+align-items: center;
+justify-content: flex-start;
+height: 100vh;
+}
+
+
+
+#responsive-nav-bar ul {
+list-style: none;
+}
+
+#responsive-nav-bar li {
+text-align: center;
+font-size: 15px;
+margin-top: 40%;
+color: $bleu;
+
+a{
+  text-decoration: none;
+  color: $bleu;
+
+}
+}
+
+#responsive-first-item {
+margin-top: 0;
+padding: 0;
+}
+
+#header-img-black {
+margin-left: 5%;
+margin-top: 3%;
+width: 50%;
+height: auto;
+}
+
+#dropdown-button-black {
+display: block;
+width: 55%;
+height: auto;
+margin: 0;
+padding: 0;
+}
+
 
 #image-button-black {
-  display: none;
-  border: none;
+border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: inherit;
+padding: 2%;
 }
 
-#image-button-black:hover {
-  cursor: pointer;
+// MENU END __________________________________________________________________________
+
+h1 {
+font-size: 30px;
+font-weight: 600;
 }
 
-#image-button-black:focus {
-  outline: 0;
+h2 {
+color: $bleu;
+font-size: 20px;
+font-weight: 40px;
+}
+
+h3 {
+font-size: 15px;
+font-weight: 300;
+color: $orange;
+}
+
+.home-text {
+margin-top: 200px;
+
+h1,
+p,
+.btn-mtm {
+  text-align: left;
+}
+}
+
+p {
+font-size: 10px;
+
+}
+
+.p-c {
+// background-color: #ff5a63;
+margin-top: 200px;
+}
+
+.btn-mtm {
+padding: 15px;
+border: 0;
+font-size: 14px;
+}
+
+.p-y {
+margin-top: 100px;
+
+}
+
+.p-x {
+margin-top: 50px;
+
+}
+
+span {
+color: $orange;
 }
 
 
+.card-body {
+padding-left: 0;
+}
+
+
+.container-lg {
+margin-bottom: 100px;
+
+}
+
+h4 {
+font-weight: 600;
+// background-color: #ff5a63;
+}
+
+.p-2 {
+margin-top: 6px;
+// background-color: #ff5a63;
+}
 
 .backimg-mtm {
-  width: 100vw;
+  width: auto;
   height: 100vh;
   /* hero-header flexbox */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Texy style */
-  text-align: center;
-  color: white;
-
+  flex-wrap: wrap;
   /* Background image */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-  background-size:cover;
+  background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: white;
 }
-
-
-/* Footer Section */
-
-footer {
-  margin-top: 4%;
-  text-align: center;
-}
-
-/* @Media min-width: 480px */
-@media only screen and (min-width : 200px) and (max-width : 860px) {
-
-
-  // My code
-
-
-  h1 {
-    font-size: 70px;
-    font-weight: 600;
-  }
-
-  h2 {
-    color: $bleu;
-    font-size: 50px;
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 17px;
-    font-weight: 300;
-    color: $orange;
-  }
-
-  .home-text {
-    margin-top: 200px;
-
-    h1,
-    p,
-    .btn-mtm {
-      text-align: left;
-    }
-  }
-
-  p {
-    margin-top: 20px;
-    font-size: 10px;
-  }
-
-  .p-c {
-    // background-color: #ff5a63;
-    margin-top: 200px;
-  }
-
-  .btn-mtm {
-    padding: 15px;
-    border: 0;
-    font-size: 14px;
-  }
-
-  .p-y {
-    margin-top: 100px;
-
-  }
-
-  .p-x {
-    margin-top: 50px;
-
-  }
-
-  .card-body {
-    padding-left: 0;
-  }
-
-
-  .container-lg {
-    margin-bottom: 100px;
-
-  }
-
-  h4 {
-    font-weight: 600;
-    // background-color: #ff5a63;
-  }
-
-  .p-2 {
-    margin-top: 6px;
-    // background-color: #ff5a63;
-  }
-
-
-  #normal-header {
-    z-index: 99999;
-  }
-
-  .card-mtm {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    border: 0;
-    z-index: -990;
-  }
-
-  .card-mtm img {
-    margin-bottom: 25px;
-  }
-
-  // My code
-
-
-
-  /* Navigation CSS */
-  #header {
-    background: white;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    min-height: 80px;
-    margin: auto;
-  }
-
-
-  #normal-header {
-    display: none;
-  }
-
-  #responsive-header {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    margin: auto;
-  }
-
-  #responsive-logo-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 0 1% 0;
-  }
-
-  #responsive-nav-bar {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-  }
-
-
-
-  #responsive-nav-bar ul {
-    list-style: none;
-  }
-
-  #responsive-nav-bar li {
-    text-align: center;
-    font-size: 23px;
-    margin-top: 40%;
-  }
-
-  #responsive-first-item {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  #header-img-black {
-    margin-left: 5%;
-    margin-top: 3%;
-    width: 50%;
-    height: auto;
-  }
-
-  #dropdown-button-black {
-    display: block;
-    width: 55%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  #image-button-black {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: inherit;
-    padding: 2%;
-  }
-
-
-
-
-  /* Hero CSS */
-
-  .backimg-mtm {
-    width: auto;
-    height: 100vh;
-    /* hero-header flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-  }
-
-  /* Footer Section */
-
-  footer {
-    margin-top: 10%;
-  }
-
-}
-
-
-
-
-// ________________________________________________________________________________________________________________________________________________________
-
-
-
-
-@media only screen and (min-width : 860px) and (max-width : 1280px) {
-
-
-  // My code
-
-
-  h1 {
-    font-size: 70px;
-    font-weight: 600;
-  }
-
-  h2 {
-    color: $bleu;
-    font-size: 50px;
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 17px;
-    font-weight: 300;
-    color: $orange;
-  }
-
-  .home-text {
-    margin-top: 200px;
-
-    h1,
-    p,
-    .btn-mtm {
-      text-align: left;
-    }
-  }
-
-  p {
-    margin-top: 20px;
-    font-size: 10px;
-  }
-
-  .p-c {
-    // background-color: #ff5a63;
-    margin-top: 200px;
-  }
-
-  .btn-mtm {
-    padding: 15px;
-    border: 0;
-    font-size: 14px;
-  }
-
-  .p-y {
-    margin-top: 100px;
-
-  }
-
-  .p-x {
-    margin-top: 50px;
-
-  }
-
-  .card-body {
-    padding-left: 0;
-  }
-
-
-  .container-lg {
-    margin-bottom: 100px;
-
-  }
-
-  h4 {
-    font-weight: 600;
-    // background-color: #ff5a63;
-  }
-
-  .p-2 {
-    margin-top: 6px;
-    // background-color: #ff5a63;
-  }
-
-
-  #normal-header {
-    z-index: 99999;
-  }
-
-  .card-mtm {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    border: 0;
-    z-index: -990;
-  }
-
-  .card-mtm img {
-    margin-bottom: 25px;
-  }
-
-  // My code
-
-  /* Navigation CSS */
-  #header {
-    background: white;
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    min-height: 80px;
-    margin: auto;
-  }
-
-
-  #normal-header {
-    display: none;
-  }
-
-  #responsive-header {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    margin: auto;
-  }
-
-  #responsive-logo-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 0 1% 0;
-  }
-
-  #responsive-nav-bar {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    height: 100vh;
-  }
-
-  #responsive-nav-bar ul {
-    list-style: none;
-  }
-
-  #responsive-nav-bar li {
-    text-align: center;
-    font-size: 23px;
-    margin-top: 40%;
-  }
-
-  #responsive-first-item {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  #header-img-black {
-    margin-left: 5%;
-    margin-top: 3%;
-    width: 50%;
-    height: auto;
-  }
-
-  #dropdown-button-black {
-    display: block;
-    width: 55%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-  }
-
-
-  #image-button-black {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: inherit;
-    padding: 2%;
-  }
-
-
-  /* Hero CSS */
-
-  .backimg-mtm {
-    width: auto;
-    height: 120vh;
-
-    /* hero-header flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    /* Texy style */
-    text-align: center;
-    color: white;
-
-    /* Background image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-
-
-  
-}
-
-
-// My code
-h1 {
-  font-size: 120px;
-  font-weight: 600;
-}
-
-h2 {
-  color: $bleu;
-  font-size: 50px;
-  font-weight: 40px;
-}
-
-h3 {
-  font-size: 35px;
-  font-weight: 300;
-  color: $orange;
-}
-
-.home-text {
-  margin-top: 200px;
-
-  h1,
-  p,
-  .btn-mtm {
-    text-align: left;
-  }
-}
-
-p {
-  font-size: 20px;
-
-}
-
-.p-c {
-  // background-color: #ff5a63;
-  margin-top: 200px;
-}
-
-.btn-mtm {
-  padding: 15px;
-  border: 0;
-  font-size: 14px;
-}
-
-.p-y {
-  margin-top: 100px;
-
-}
-
-.p-x {
-  margin-top: 50px;
-
-}
-
-span {
-  color: $orange;
-}
-
-
-.card-body {
-  padding-left: 0;
-}
-
-
-.container-lg {
-  margin-bottom: 100px;
-
-}
-
-h4 {
-  font-weight: 600;
-  // background-color: #ff5a63;
-}
-
-.p-2 {
-  margin-top: 6px;
-  // background-color: #ff5a63;
-}
-
-
-#normal-header {
-  z-index: 99999;
-}
-
-.card-mtm {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  border: 0;
-  z-index: -990;
-}
-
-.card-mtm img {
-  margin-bottom: 25px;
-}
-
-// My code

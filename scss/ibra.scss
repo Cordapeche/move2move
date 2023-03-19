@@ -188,3 +188,242 @@ html {
     margin-top: 100px;
     // background-color: #ff5a63;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (min-width : 200px) and (max-width : 860px) {
+
+
+    // My code
+  
+  
+    h1 {
+      font-size: 70px;
+      font-weight: 600;
+    }
+  
+    h2 {
+      color: $bleu;
+      font-size: 50px;
+      font-size: 30px;
+    }
+  
+    h3 {
+      font-size: 17px;
+      font-weight: 300;
+      color: $orange;
+    }
+  
+    .home-text {
+      margin-top: 200px;
+  
+      h1,
+      p,
+      .btn-mtm {
+        text-align: left;
+      }
+    }
+  
+    p {
+      margin-top: 20px;
+      font-size: 10px;
+    }
+  
+    .p-c {
+      // background-color: #ff5a63;
+      margin-top: 200px;
+    }
+  
+    .btn-mtm {
+      padding: 15px;
+      border: 0;
+      font-size: 14px;
+    }
+  
+    .p-y {
+      margin-top: 100px;
+  
+    }
+  
+    .p-x {
+      margin-top: 50px;
+  
+    }
+  
+    .card-body {
+      padding-left: 0;
+    }
+  
+  
+    .container-lg {
+      margin-bottom: 100px;
+  
+    }
+  
+    h4 {
+      font-weight: 600;
+      // background-color: #ff5a63;
+    }
+  
+    .p-2 {
+      margin-top: 6px;
+      // background-color: #ff5a63;
+    }
+  
+  
+    #normal-header {
+      z-index: 99999;
+    }
+  
+    .card-mtm {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      border: 0;
+      z-index: -990;
+    }
+  
+    .card-mtm img {
+      margin-bottom: 25px;
+    }
+  
+    // My code
+  
+  
+  
+    /* Navigation CSS */
+    #header {
+      background: white;
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100vw;
+      min-height: 80px;
+      margin: auto;
+    }
+  
+  
+    #normal-header {
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      font-size: 19px;
+      min-height: 100px;
+    }
+  
+    #responsive-header {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      margin: auto;
+    }
+  
+    #responsive-logo-button {
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 0 1% 0;
+    }
+  
+    #responsive-nav-bar {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+  
+  
+  
+    #responsive-nav-bar ul {
+      list-style: none;
+    }
+  
+    #responsive-nav-bar li {
+      text-align: center;
+      font-size: 23px;
+      margin-top: 40%;
+    }
+  
+    #responsive-first-item {
+      margin-top: 0;
+      padding: 0;
+    }
+  
+    #header-img-black {
+      margin-left: 5%;
+      margin-top: 3%;
+      width: 50%;
+      height: auto;
+    }
+  
+    #dropdown-button-black {
+      display: block;
+      width: 55%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  
+  
+    #image-button-black {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      padding: 2%;
+    }
+  
+  
+  
+  
+    /* Hero CSS */
+  
+    .backimg-mtm {
+      width: auto;
+      height: 100vh;
+      /* hero-header flexbox */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      /* Background image */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
+      background-size: auto 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+  
+    /* Footer Section */
+  
+    footer {
+      margin-top: 10%;
+    }
+  
+  }
