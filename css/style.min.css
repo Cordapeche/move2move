@@ -10918,18 +10918,18 @@ body {
 }
 
 h1, .h1 {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 600;
 }
 
 h2, .h2 {
   color: #07163e;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 40px;
 }
 
 h3, .h3 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
   color: #eb352e;
 }
@@ -10944,7 +10944,7 @@ h3, .h3 {
 }
 
 p {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .p-c {
@@ -10955,6 +10955,10 @@ p {
   padding: 15px;
   border: 0;
   font-size: 14px;
+}
+.btn-mtm a {
+  text-decoration: none;
+  color: #07163e;
 }
 
 .p-y {
