@@ -28,22 +28,29 @@ body {
 // MENU _____________________________________________________
 
 /* Navigation CSS */
-#header {
-  background: white;
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  min-height: 80px;
-  margin: auto;
-}
+// #header {
+//   background: white;
+//   position: fixed;
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-flow: row;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100vw;
+//   min-height: 80px;
+//   margin: auto;
+// }
 
 
 #normal-header {
   display: none;
+}
+
+a:hover {
+    color: $orange;
+}
+.active-menu-links {
+    color: $orange;
 }
 
 #responsive-header {
@@ -118,6 +125,8 @@ body {
   background-color: inherit;
   padding: 2%;
 }
+
+
 
 // MENU END __________________________________________________________________________
 

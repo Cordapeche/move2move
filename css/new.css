@@ -1,5 +1,96 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: auto;
+    height: auto;
+    /* font-size: 18px; */
+    font-family: "Noto Sans";
+  }
+  
 
+  
+  
+  /* ----- General Header CSS ------ */
+  
+  #header {
+    position: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  
+  
+  
+  
+  /* Normal Header */
+  
+  .active-header {
+    background-color: white;
+    color: black;
+  }
+  
+  .menu-link {
+    color: white;
+  }
+  
+  .active-menu-links {
+    color: black;
+  }
+  
+  #normal-header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    font-size: 19px;
+    min-height: 100px;
+  }
+  
+  #header-img {
+    width: 250px;
+    margin-left: 15%;
+  }
+  
+  #nav-bar ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+  }
+  
+  #nav-bar li {
+    padding: 10px;
+    margin: 12px;
+  }
+  
+  #nav-bar ul, a {
+    text-decoration: none;
+  }
+  
 
+  
+  
 
+  
+  
+  
+  
 
-
+  
+  

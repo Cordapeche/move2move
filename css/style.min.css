@@ -10835,21 +10835,16 @@ body {
 }
 
 /* Navigation CSS */
-#header {
-  background: white;
-  position: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  min-height: 80px;
-  margin: auto;
-}
-
 #normal-header {
   display: none;
+}
+
+a:hover {
+  color: #eb352e;
+}
+
+.active-menu-links {
+  color: #eb352e;
 }
 
 #responsive-header {
