@@ -10780,21 +10780,10 @@ body {
   color: #ff5a6e;
 }
 
-.decoimg {
-  width: 400px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-}
-
-.decoimg img {
+fblanc .decoimg img {
   width: 100%;
   border-radius: 30% 70% 43% 57%/30% 30% 70% 70%;
   transition: border-radius 1s ease-in-out;
-}
-
-.decoimg img:hover {
-  border-radius: 67% 33% 70% 30%/30% 68% 32% 70%;
 }
 
 .ejc {
@@ -10814,6 +10803,66 @@ body {
   align-items: center;
 }
 
+.contenloader {
+  display: none;
+}
+
+#loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: blue;
+  transition: 0.3s;
+}
+
+#loadMore:hover {
+  color: blue;
+  background-color: #fff;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+
+.p-0 {
+  margin: 2px;
+}
+
+.decoimg {
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.decoimg img {
+  width: 100%;
+  border-radius: 30% 70% 43% 57%/30% 30% 70% 70%;
+  animation: borderanim 2s initial;
+  -webkit-animation: borderanim 30s infinite;
+  transition: border-radius 5s ease-in-out;
+}
+
+@keyframes borderanim {
+  0% {
+    border-radius: 30% 70% 43% 57%/30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 60% 30% 20% 80%/80% 50% 60% 50%;
+  }
+  50% {
+    border-radius: 80% 50% 43% 27%/50% 90% 60% 20%;
+  }
+  75% {
+    border-radius: 50% 20% 20% 95%/20% 65% 45% 70%;
+  }
+  100% {
+    border-radius: 30% 70% 43% 57%/30% 30% 70% 70%;
+  }
+}
 /* Navigation CSS */
 #normal-header {
   display: none;
@@ -10823,7 +10872,7 @@ a:hover {
   color: #eb352e;
 }
 
-.active-menu-links {
+.active-menu-links, .active {
   color: #eb352e;
 }
 
@@ -10896,7 +10945,7 @@ a:hover {
 }
 
 h1, .h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -10914,6 +10963,7 @@ h3, .h3 {
 
 .home-text {
   margin-top: 200px;
+  color: #07163e;
 }
 .home-text h1, .home-text .h1,
 .home-text p,
@@ -10966,6 +11016,15 @@ h4, .h4 {
 
 .p-2 {
   margin-top: 6px;
+}
+
+.fblanc {
+  background-color: white;
+  margin-left: 0;
+}
+
+.mtmpr {
+  font-weight: 600;
 }
 
 .backimg-mtm {
@@ -11127,7 +11186,7 @@ footer {
     text-align: center;
   }
   h1, .h1 {
-    font-size: 120px;
+    font-size: 64px;
     font-weight: 600;
   }
   h2, .h2 {
