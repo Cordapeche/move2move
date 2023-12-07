@@ -40,6 +40,17 @@ body {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.decohomex {
+  height: 30%;
+  width: 100%;
+}
+
+.decohomex img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 50% 20% 70% 20%;
   transition: border-radius 1s ease-in-out;
 }
@@ -389,5 +400,35 @@ footer {
 }
 
 .icon {
+  color: $orange;
+}
+
+.p-b-0 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px!important;
+}
+
+.icon {
+  color: #eb352e;
+  width: 100px;
+  height: 100px;
+  padding-top:12px;
+}
+
+
+
+
+
+.icon:hover {
+  color: $orangeClaire;
+}
+
+.xxx {
   background-color: #eb352e;
+
+}
+
+.footertext {
+  font-size: small;
 }

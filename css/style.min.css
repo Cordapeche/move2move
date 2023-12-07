@@ -10797,6 +10797,18 @@ body {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.decohomex {
+  height: 30%;
+  width: 100%;
+}
+
+.decohomex img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50% 20% 70% 20%;
   transition: border-radius 1s ease-in-out;
 }
@@ -11108,7 +11120,32 @@ footer {
 }
 
 .icon {
+  color: #eb352e;
+}
+
+.p-b-0 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 0px !important;
+}
+
+.icon {
+  color: #eb352e;
+  width: 100px;
+  height: 100px;
+  padding-top: 12px;
+}
+
+.icon:hover {
+  color: #ec8375;
+}
+
+.xxx {
   background-color: #eb352e;
+}
+
+.footertext {
+  font-size: small;
 }
 
 @media (min-width: 992px) {
@@ -11277,25 +11314,6 @@ footer {
   }
   .p-3 {
     margin-top: 100px;
-  }
-  .decohome {
-    height: 70%;
-    width: 100%;
-  }
-  .decohome img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 50% 20% 70% 20%/40% 20% 60% 30%;
-    transition: border-radius 1s ease-in-out;
-  }
-  .decohome img {
-    width: 100%;
-    border-radius: 30% 70% 43% 57%/30% 30% 70% 70%;
-    animation: borderanim 2s initial;
-    -webkit-animation: borderanim 30s infinite;
-    transition: border-radius 5s ease-in-out;
   }
   @keyframes borderanim {
     0% {
