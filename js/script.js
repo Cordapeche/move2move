@@ -26,7 +26,16 @@ $(document).ready(function () {
     });
 
 
-
+    function callback(entries) {
+      for (let i = 0; i < entries.length; i++ ) {
+       entries[i].target.src = (entries[i].isIntersecting) ? entries[i].target.getAttribute('data-src') : "";
+      }
+   }
+   const gifs = document.querySelectorAll('.gif');
+   const observer = new IntersectionObserver(callback);
+   for (let i = 0; i < gifs.length; i++) {
+     observer.observe(gifs[i]);
+   }
   
 
 

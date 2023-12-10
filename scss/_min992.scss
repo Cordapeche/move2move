@@ -3,26 +3,42 @@
     $bleu: #07163e;
     $orange: #eb352e;
     $orangeClaire: #ec8375;
+
+
+    // TEXTS COLOR AND SIZE -------------------------- STARTS
+h1 {
+  font-size: 96px;
+  font-weight: 600;  
+  font-family: 'Sintony', sans-serif;
+}
+
+h2 {
+  font-family: 'Sintony', sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 300;
+  font-family: 'Sintony', sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 300px;
+  font-family: 'Sintony', sans-serif;
+}
+
+p {
+  font-size: 15px;
+
+}
+
+
+// TEXTS COLOR AND SIZE -------------------------- END
     
-    // _______________________________________________________________________________________________________________________________________________
-    
-    
-    #red-text {
-      color: $orange;
-    }
-    
-    #title-text-separator {
-      width: 5%;
-      margin-top: 1%;
-      border: solid 1px #ff5a6e;
-    }
-    
-    .responsive-menu-link {
-      color: black;
-    }
-    
-    
-    /* ----- General Header CSS ------ */
+   // HEADER AND MENU ------------------------------ START     
     
     #header {
       position: fixed;
@@ -35,10 +51,7 @@
       margin: auto;
       font-size: 19px;
       min-height: 100px;
-    }
-    
-    
-    /* Normal Header */
+    }        
     
     .active-header {
       background-color: white;
@@ -69,8 +82,6 @@
       width: 250px;
     }
     
-    
-    
     #nav-bar ul {
       list-style: none;
       display: flex;
@@ -85,13 +96,8 @@
     #nav-bar ul,
     a {
       text-decoration: none;
-    }
-    
-    
-    
-    
-    /* Responsive Header */
-    
+    } 
+
     #responsive-header {
       display: none;
     }
@@ -107,188 +113,30 @@
     
     #image-button-black:focus {
       outline: 0;
-    }
+    }       
+
+// HEADER AND MENU ------------------------------ END    
     
-    
-    
-    .backimg-mtm {
-      width: 100vw;
-      height: 100vh;
-      /* hero-header flexbox */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
-      /* Texy style */
-      text-align: center;
+    .mtm-btn {
+      width: 30%;
+      height: 50px;
+      border: 0px;
+      background-color: $orange;  
       color: white;
-    
-      /* Background image */
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-      background-size:cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-    
-    
-    /* Footer Section */
-    
-    footer {
-      margin-top: 4%;
-      text-align: center;
-    }
-    
-    // MY CODE________________________________________________________________________________________________________________________________________________________
-    
-    h1 {
-      font-size: 64px;
-      font-weight: 600;
-    }
-    
-    h2 {
-      color: $bleu;
-      font-size: 50px;
-      font-weight: 40px;
-    }
-    
-    h3 {
-      font-size: 35px;
-      font-weight: 300;
-      color: $orange;
-    }
-    
-    .home-text {
-    
-      h1,
-      p,
-      .btn-mtm {
-        text-align: left;
+      &:hover{
+        background-color: $orangeClaire;
       }
-    }
-    
-    p {
-      font-size: 20px;
-    
-    }
-    
-    .p-c {
-      // background-color: #ff5a63;
-      margin-top: 200px;
-    }
-    
-    .btn-mtm {
-      padding: 15px;
-      border: 0;
-      font-size: 14px;
-    }
-    
-    .p-y {
-      margin-top: 100px;
-    
-    }
-    
-    .p-x {
-      margin-top: 50px;
-    
-    }
-    
-    span {
-      color: $orange;
-    }
-    
-    
-    .card-body {
-      padding-left: 0;
-    }
-    
-    
-    .container-lg {
-      margin-bottom: 100px;
-    
-    }
-    
-    h4 {
-      font-weight: 600;
-      // background-color: #ff5a63;
-    }
-    
-    .p-2 {
-      margin-top: 6px;
-      // background-color: #ff5a63;
-    }
-    
-    
-    #normal-header {
-      z-index: 99999;
-    }
-    
-    .card-mtm {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
-      border: 0;
-      z-index: -990;
-    }
-    
-    .card-mtm img {
-      margin-bottom: 25px;
-    }
-    
-    .p-3 {
-        margin-top: 100px;
-        // background-color: #ff5a63;
-      }
-    
-    // My code
-
-    // .decohome {
-    //   height: 70%;
-    //   width: 100%;
-    // }
-    
-    // .decohome img {
-    //   width: 100%;
-    //   height: 100%;
-    //   object-fit: cover;
-    //   border-radius: 50% 20% 70% 20% / 40% 20% 60% 30%;
-    //   transition: border-radius 1s ease-in-out;
-    // }
-    
-    // .decohome img {
-    //   width: 100%;
-      
-    //   border-radius: 30% 70% 43% 57% / 30% 30% 70% 70%;
-    //   animation: borderanim 2s initial;
-    //   -webkit-animation: borderanim 30s infinite;
-    //   transition: border-radius 5s ease-in-out;
-    // }
-    
-    @keyframes borderanim {
-      0% {
-        border-radius: 50% 20% 70% 20% / 40% 20% 60% 30%;
-      }
-      25% {
-        border-radius: 60% 30% 20% 80% / 80% 50% 60% 50%;
-      }
-      50% {
-        border-radius: 80% 50% 43% 27% / 50% 90% 60% 20%;
-      }
-      75% {
-        border-radius: 50% 20% 20% 95% / 20% 65% 45% 70%;
-      }
-      100% {
-        border-radius: 50% 20% 70% 20% / 40% 20% 60% 30%;
-      }
-    }
-    
-    @-webkit-keyframes borderanim {
-      to {
-        border-radius: 30% 70% 43% 57% / 30% 30% 70% 70%;
+      a {
+        color: white;        
       }
     }
 
+  .l {
+    display: flex;
+    justify-content:end;
+  }
 
-    
+  .decohome {
+    display: block;
+  }
 }

@@ -1,250 +1,32 @@
-// @media (min-width: 1200px) {
-//     $bleuClair: #161e3f;
-//     $bleu: #07163e;
-//     $orange: #eb352e;
-//     $orangeClaire: #ec8375;
-    
-//     // _______________________________________________________________________________________________________________________________________________
-    
-    
-//     #red-text {
-//       color: $orange;
-//     }
-    
-//     #title-text-separator {
-//       width: 5%;
-//       margin-top: 1%;
-//       border: solid 1px #ff5a6e;
-//     }
-    
-//     .responsive-menu-link {
-//       color: black;
-//     }
-    
-    
-//     /* ----- General Header CSS ------ */
-    
-//     #header {
-//       position: fixed;
-//       display: flex;
-//       flex-flow: column;
-//       justify-content: center;
-//       align-items: center;
-//       flex-wrap: wrap;
-//       width: 100%;
-//       margin: auto;
-//       font-size: 19px;
-//       min-height: 100px;
-//     //   background-color: #ec8375;
-//     }
-    
-    
-    
-    
-    
-//     /* Normal Header */
-    
-//     .active-header {
-//       background-color: white;
-//       color: $bleu;
-//     }
-    
-//     .menu-link {
-//       color: white;
-//     }
-    
-//     .active-menu-links {
-//       color: $bleu;
-//     }
-    
-//     #normal-header {
-//       position: fixed;
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: space-between;
-//       align-items: center;
-//       width: 100%;
-//       margin: auto;
-//       font-size: 19px;
-//       min-height: 100px;
-//     }
-    
-//     #header-img {
-//       width: 250px;
-//     }
-    
-    
-    
-//     #nav-bar ul {
-//       list-style: none;
-//       display: flex;
-//       flex-flow: row;
-//     }
-    
-//     #nav-bar li {
-//       padding: 10px;
-//       margin: 12px;
-//     }
-    
-//     #nav-bar ul,
-//     a {
-//       text-decoration: none;
-//     }
-    
-    
-    
-    
-//     /* Responsive Header */
-    
-//     #responsive-header {
-//       display: none;
-//     }
-    
-//     #image-button-black {
-//       display: none;
-//       border: none;
-//     }
-    
-//     #image-button-black:hover {
-//       cursor: pointer;
-//     }
-    
-//     #image-button-black:focus {
-//       outline: 0;
-//     }
-    
-    
-    
-//     .backimg-mtm {
-//       width: 100vw;
-//       height: 100vh;
-//       /* hero-header flexbox */
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-    
-//       /* Texy style */
-//       text-align: center;
-//       color: white;
-    
-//       /* Background image */
-//       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.png");
-//       background-size:cover;
-//       background-position: center center;
-//       background-repeat: no-repeat;
-//       background-attachment: fixed;
-//     }
-    
-    
-//     /* Footer Section */
-    
-//     footer {
-//       margin-top: 4%;
-//       text-align: center;
-//     }
-    
-//     // MY CODE________________________________________________________________________________________________________________________________________________________
-    
-//     h1 {
-//       font-size: 120px;
-//       font-weight: 600;
-//     }
-    
-//     h2 {
-//       color: $bleu;
-//       font-size: 50px;
-//       font-weight: 40px;
-//     }
-    
-//     h3 {
-//       font-size: 35px;
-//       font-weight: 300;
-//       color: $orange;
-//     }
-    
-//     .home-text {
-    
-//       h1,
-//       p,
-//       .btn-mtm {
-//         text-align: left;
-//       }
-//     }
-    
-//     p {
-//       font-size: 20px;
-    
-//     }
-    
-//     .p-c {
-//       // background-color: #ff5a63;
-//       margin-top: 200px;
-//     }
-    
-//     .btn-mtm {
-//       padding: 15px;
-//       border: 0;
-//       font-size: 14px;
-//     }
-    
-//     .p-y {
-//       margin-top: 100px;
-    
-//     }
-    
-//     .p-x {
-//       margin-top: 50px;
-    
-//     }
-    
-//     span {
-//       color: $orange;
-//     }
-    
-    
-//     .card-body {
-//       padding-left: 0;
-//     }
-    
-    
-//     .container-lg {
-//       margin-bottom: 100px;
-    
-//     }
-    
-//     h4 {
-//       font-weight: 600;
-//       // background-color: #ff5a63;
-//     }
-    
-//     .p-2 {
-//       margin-top: 6px;
-//       // background-color: #ff5a63;
-//     }
-    
-    
-//     #normal-header {
-//       z-index: 99999;
-//     }
-    
-//     .card-mtm {
-//       position: relative;
-//       display: flex;
-//       flex-direction: column;
-//       min-width: 0;
-//       border: 0;
-//       z-index: -990;
-//     }
-    
-//     .card-mtm img {
-//       margin-bottom: 25px;
-//     }
-    
-//     .p-3 {
-//         margin-top: 100px;
-//         // background-color: #ff5a63;
-//       }
-    
-//     // My code  
-// }
+@media (min-width: 1200px) {
+    $bleuClair: #161e3f;
+    $bleu: #07163e;
+    $orange: #eb352e;
+    $orangeClaire: #ec8375;
+    
+
+    h1 {
+      font-size: 128px;
+      font-weight: 600;
+      font-family: 'Sintony', sans-serif;
+    }
+    
+    h2 {
+      font-size: 96px;
+      font-weight: 600;
+      font-family: 'Sintony', sans-serif;
+    }
+    
+    h3 {
+      font-size: 48px;
+      font-weight: 300;
+      font-family: 'Sintony', sans-serif;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 300px;
+        font-family: 'Sintony', sans-serif;
+      }
+}
   

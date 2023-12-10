@@ -5,13 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
-  <link rel="stylesheet" type="text/css" href="/css/lightbox.css" />
+  <title>Move2Move</title>
+  <meta name="description"
+    content="Move2Move est votre site de référence pour tous vos besoins en matière de déménagement. Faites confiance à notre équipe expérimentée et professionnelle pour vous offrir un service complet et sans tracas, que vous déménagiez localement ou à l'international. Découvrez nos services de déménagement, transport, stockage et lift sur mesure dès aujourd'hui." />
+  <meta name="keywords"
+    content="déménagement, société de déménagement, service de déménagement, déménagement local, déménagement international, déménageurs professionnels, emballage et déballage, transport, logistique, démontage et montage de meubles, assurance déménagement, déménagement résidentiel, déménagement commercial" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <title> Move2move </title>
+  <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/img/LogoOnglet.ico">
+  <link rel="stylesheet" type="text/css" href="/css/lightbox.css" />
+
+  <link rel="stylesheet" type="text/css" href="/css/loco.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
 </head>
 
 <body>
@@ -26,16 +33,19 @@
       <nav id="nav-bar">
         <ul>
           <li class="nav-link" id="menu-item">
-            <a href="#home" class="menu-link">Accueil</a>
+            <a href="/index.html" class="menu-link">Accueil</a>
           </li>
           <li class="nav-link" id="menu-item">
-            <a href="#services" class="menu-link">Services</a>
+            <a href="/services.html" class="menu-link active">Services</a>
           </li>
           <li class="nav-link" id="menu-item">
-            <a href="#about" class="menu-link">A propos</a>
+            <a href="/apropos.html" class="menu-link">A propos</a>
           </li>
           <li class="nav-link" id="menu-item">
-            <a href="#contact" class="menu-link">Contact</a>
+            <a href="/contact.html" class="menu-link">Contact</a>
+          </li>
+          <li class="nav-link phone" id="menu-item">
+            <a href="/" class="menu-link">+32 489 58 19 59</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +56,7 @@
 
       <div id="responsive-logo-button">
         <a href="#" id="image-link"><img src="img/LogoNoir.svg" alt="Reverse Logo" id="header-img-black" /></a>
-        <button id="image-button-black"><img src="img/menu-icon-1.png" alt="Dropdown Menu"
+        <button id="image-button-black"><img src="img/menu-icon.svg" alt="Dropdown Menu"
             id="dropdown-button-black" /></button>
       </div>
 
@@ -55,16 +65,16 @@
         <div class="mtm-menu">
           <ul>
             <li class="nav-link" id="responsive-home-item">
-              <a href="#home" class="responsive-menu-link">Accueil</a>
+              <a href="/index.html" class="responsive-menu-link">Accueil</a>
             </li>
             <li class="nav-link" id="responsive-features-item">
-              <a href="#services" class="responsive-menu-link">Services</a>
+              <a href="/services.html" class="responsive-menu-link active">Services</a>
             </li>
             <li class="nav-link" id="responsive-products-item">
-              <a href="#about" class="responsive-menu-link">A propos</a>
+              <a href="/apropos.html" class="responsive-menu-link">A propos</a>
             </li>
             <li class="nav-link" id="responsive-media-item">
-              <a href="#contact" class="responsive-menu-link">Contact</a>
+              <a href="/contact.html" class="responsive-menu-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -72,9 +82,11 @@
         <div class="contactus">
           <ul>
             <li class="nav-link" id="responsive-home-item">
-              <h2>Contactez nous</h2><br><br>
-              <p class="responsive-menu-link">+32 489 58 19 59</p>
-              <p class="responsive-menu-link">contact2move@gmail.com</p>
+              <h4>Contactez nous</h4><br><br>
+            <li class="nav-link phone">
+              <a href="/" class="responsive-menu-link">+32 489 58 19 59</a>
+            </li>
+            <p class="responsive-menu-link">contact2move@gmail.com</p>
             </li>
           </ul>
         </div>
@@ -86,259 +98,174 @@
   </header>
 
 
-  <div class="container-full backimg-mtm " id="home">
-    <div class="container-lg fblanc">
+  <div class="container-full mtm-services">
+    <div class="container-lg">
       <div class="row">
-        <div class="col-12 lg-6 home-text ">
-          <h1>Best way <br><span>2 move</span></h1>
-          <p>Le meilleur pour votre déménagement. <br>Déménagement, transport &amp; Lift </p>
-          <p><span class="mtmpr">Devis gratuit</span> <span class="mtmpl">+32 489 58 19 59</span></p>
+        <div class="col-12 lg-6 home-text">
+          <h1>Nos <span>services</span></h1>
+          <p>Nous sommes là pour rendre votre déménagement facile, rapide et sans stress. Nous sommes votre service de
+            déménagement de confiance et nous nous engageons à vous fournir un service de qualité supérieure.</p>
+
         </div>
+
         <div class="col-12 lg-6"></div>
       </div>
     </div>
   </div>
 
+  <div class="container-fluid services p-y">
+    <div class="container-lg">
+      <div class="row">
 
-  <!-- "Features Section" -->
-
-  <div class="container-lg">
-    <div class="row">
-
-      <div class="col-12 col-lg-6 order-lg-1 order-2">
-        <div class="decoimg ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6 order-lg-2 order-1">
-        <div class="p-y">
-          <h1><span>Vos affaires,</span> notre priorité</h1>
-          <p>Nous sommes là pour rendre votre déménagement facile, rapide et sans stress. Nous sommes votre service
-            de déménagement de confiance et nous nous engageons à vous fournir un service de qualité supérieure. Nous
-            vous proposons:</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-lg" id="services">
-
-    <div class="row">
-
-      <div class="col-12 col-lg-6 p-x">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 mb-4 mtm-img">
-            <img src="img/Demenagement-.webp" class="w-100 shadow-1-strong" alt="..." />
+        <div class="col-12 col-lg-4">
+          <div class="mtm-img">
+            <img src="img/Demenagement.webp" class="w-100 shadow-1-strong" alt="..." />
+          </div>
+          <div class="card-mtm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h3>Déménagement</h3>
+                <p class="card-text">Services de déménagement pour particuliers et professionnels en toute expertise et
+                  aux prix avantageux
+                </p>
+            </div>
           </div>
         </div>
-        <div class="card-mtm">
-          <div class="card-body">
-            <h5 class="card-title">
-              <h2>Déménagement</h2>
-              <p class="card-text">Services de déménagement pour particuliers et professionnels en toute expertise et
-                aux prix avantageux
-              </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-12 col-lg-6 p-x">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 mb-4 mtm-img">
+        <div class="col-12 col-lg-4">
+          <div class="mtm-img">
             <img src="img/transport.webp" class="w-100 shadow-1-strong" alt="..." />
           </div>
-        </div>
-        <div class="card-mtm">
-          <div class="card-body">
-            <h5 class="card-title">
-              <h2>Transport</h2>
-              <p class="card-text">
-                Du matériel à transporter en toute sécurité? Ne vous souciez plus nous faisons de
-                simple transport de meubles, piano, electro, etc.
-              </p>
+          <div class="card-mtm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h3>Transport</h3>
+                <p class="card-text">
+                  Du matériel à transporter en toute sécurité? Ne vous souciez plus nous faisons aussi de
+                  simple transport de meubles, piano, electro, etc.
+                </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-lg-6 p-x">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 mb-4 mtm-img">
+        <div class="col-12 col-lg-4">
+          <div class="mtm-img">
             <img src="img/lift.webp" class="w-100 shadow-1-strong" alt="..." />
           </div>
-        </div>
-        <div class="card-mtm">
-          <div class="card-body">
-            <h5 class="card-title">
-              <h2>Lift</h2>
-              <p class="card-text">
-                Nous vous offrons un service de lift pour faciliter les chargements et déchargement
-                de n'importe de quel étage en toute sécurité.
-              </p>
+          <div class="card-mtm">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h3>Lift</h3>
+                <p class="card-text">
+                  Nous vous offrons un service de lift pour faciliter les chargements et déchargements
+                  de n'importe quel étage en toute sécurité.
+                </p>
+            </div>
           </div>
         </div>
+
       </div>
-
-      <!--
-      <div class="col-12 col-lg-6 p-x">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 mb-4 mtm-img">
-            <img src="img/Box.webp" class="w-100 shadow-1-strong" alt="..." />
-          </div>
-        </div>
-        <div class="card-mtm">
-          <div class="card-body">
-            <h5 class="card-title">
-              <h2>Stockage</h2>
-              <p class="card-text">
-                Si vous avez besoin de stocker vos biens pendant un certain temps nous proposons des
-                options de stockage sécurisées.
-              </p>
-          </div>
-        </div>
-      </div>
-
-      -->
-
     </div>
-
   </div>
 
-  <div class="container-fluid">
-    <div class="container-lg">
-      <div class="row p-c">
 
-        <div class="col-12 col-lg-6 p-y order-lg-2 order-1">
-          <h1>Nos valeurs</h1>
-          <p>
-            Nous comprenons que déménager peut être stressant et fastidieux. C'est pourquoi nous mettons notre
-            expertise
-            à votre service pour vous aider à réaliser un déménagement en toute tranquillité. Nous sommes là pour vous
-            aider à chaque étape du processus, de la planification à l'installation dans votre nouveau domicile.
-          </p>
+  <div class="container-fluid p-y">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-12 col-lg-6 order-1 order-lg-1  ejc">
+          <div class="decohome">
+            <img src="/img/anim/devisgratuit.gif" alt="" class="gif" />
+            <p class="m2m-copyright">
+              <a href="https://storyset.com/user">User illustrations by Storyset</a>
+            </p>
+          </div>
         </div>
         <div class="col-12 col-lg-6 order-2 order-lg-2">
-          <div class="decoimg p-y ejc">
-            <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
+          <h2>Devis gratuit</h2>
+          <p>Nous offrons un devis gratuit pour vous aider à planifier votre déménagement en toute tranquillité et
+            nous travaillerons avec vous pour personnaliser notre service en fonction de vos besoins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-y">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-12 col-lg-6  order-1 order-lg-2 ejc">
+          <div class="decohome">
+            <img src="/img/anim/confiance.gif" alt="" class="gif" />
+            <p class="m2m-copyright">
+              <a href="https://storyset.com/user">User illustrations by Storyset</a>
+            </p>
           </div>
         </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container-lg">
-    <div class="row p-c">
-      <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <div class="decoimg p-y ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <h2>Confiance</h2>
+          <p>Nous savons que confier vos biens les plus précieux à quelqu'un peut être difficile. C'est pourquoi nous
+            sommes fiers de notre équipe d'experts en déménagement qui sont formés pour manipuler vos biens avec le plus
+            grand soin et respect.
+          </p>
         </div>
       </div>
-      <div class="col-12 col-lg-6 p-3 order-1 order-lg-2">
-        <h1>Devis gratuit</h1>
-        <p>Nous offrons un devis gratuit pour vous aider à planifier votre déménagement en toute tranquillité et
-          nous travaillerons avec vous pour personnaliser notre service en fonction de vos besoins.</p>
-      </div>
     </div>
   </div>
 
-  <div class="container-lg">
-    <div class="row p-c">
-      <div class="col-12 col-lg-6  order-2 order-lg-2">
-        <div class="decoimg p-y ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
+  <div class="container-fluid p-y">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-12 col-lg-6 order-1 order-lg-1  ejc">
+          <div class="decohome">
+            <img src="/img/anim/securite.gif" alt="" class="gif" />
+            <p class="m2m-copyright">
+              <a href="https://storyset.com/user">User illustrations by Storyset</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 order-2 order-lg-2">
+          <h2>Sécurité</h2>
+          <p>Nous prenons la sécurité très au sérieux. Nous utilisons des équipements modernes pour assurer que vos
+            biens soient transportés en toute sécurité. Nous sommes également disponibles pour répondre à toutes vos
+            questions et inquiétudes concernant la sécurité de votre déménagement.</p>
         </div>
       </div>
-      <div class="col-12 col-lg-6 p-3 order-1 order-lg-1">
-        <h1>Confiance</h1>
-        <p>Nous savons que confier vos biens les plus précieux à quelqu'un peut être difficile. C'est pourquoi nous
-          sommes fiers de notre équipe d'experts en déménagement qui sont formés pour manipuler vos biens avec le plus
-          grand soin et respect.
-        </p>
-      </div>
     </div>
   </div>
 
-  <div class="container-lg">
-    <div class="row p-c">
-      <div class="col-12 col-lg-6  order-2 order-lg-1">
-        <div class="decoimg p-y ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
+  <div class="container-fluid p-y">
+    <div class="container-lg" id="contact">
+      <div class="row">
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <h2>Contact </h2>
+          <p>Contactez-nous dès maintenant pour obtenir un devis gratuit et commencer à planifier votre déménagement en
+            toute tranquillité !</p>
+          <h4>+32 489 58 19 59</h4>
+          <h4>contact2move@gmail.com</h4>
+        </div>
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="decohome">
+              <img src="/img/anim/contact.gif" alt="" class="gif" />
+              <p class="m2m-copyright">
+                <a href="https://storyset.com/user">User illustrations by Storyset</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="mtm-button order-3">
+
+          <button type="button" class="mtm-btn">
+            <a href="/">
+              En savoir plus
+            </a>
+          </button>
         </div>
       </div>
-      <div class="col-12 col-lg-6 order-1 order-lg-2 p-3">
-        <h1>Sécurité</h1>
-        <p>
-          Nous prenons votre sécurité très au sérieux. Nous utilisons des équipements modernes pour assurer que
-          vos
-          biens soient transportés en toute sécurité. Nous sommes également disponibles pour répondre à toutes vos
-          questions et inquiétudes concernant la sécurité de votre déménagement.
-        </p>
-      </div>
     </div>
   </div>
 
-  <div class="container-lg">
-    <div class="row p-c">
-      <div class="col-12 col-md-12 col-lg-6  order-2 order-lg-2">
-        <div class="decoimg p-y ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
-        </div>
-
-      </div>
-      <div class="col-12 col-md-12 col-lg-6 p-3 order-1 order-lg-1">
-        <h1>Expérience</h1>
-        <p>
-          Notre service de déménagement est rapide, efficace et fiable. Nous sommes là pour vous aider tout au
-          long du processus de déménagement, depuis la planification jusqu'à l'arrivée de vos biens à destination. Nous
-          sommes là pour rendre votre déménagement facile, rapide et sans stress grâce à notre équipe formées et
-          éxperimentées depuis plus de 13 ans dans le métier.
-        </p>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <div class="container-lg" id="about">
-    <div class="row p-c">
-      <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <div class="decoimg p-y ejc">
-          <img src="https://ibrahima.be/wp-content/uploads/2023/10/IMG_9617.jpg" alt="" />
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 order-1 order-lg-2">
-        <h1>Qui somme nous</h1>
-        <p>
-          Move2Move est avant tout l'union de deux frères ambitieux et au désir profond d'accomplissement ayant vécu
-          des péripéties qui n'ont eut d'autres conséquences que renforcer leurs liens et leurs volonté après plusieurs
-          années de travail, d'acharnement et d'apprentissage pour différentes sociétés, il était temps pour la société
-          familial d'être lancée. Basé sur des valeurs profondes et humaines le but de Move2move est de permettre au
-          gens de n'importe quel statut social de parvenir à faire de leurs transports ou déménagements un moment
-          paisible, sécurisé et le plus organisé.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container-lg" id="contact">
-    <div class="row p-c">
-      <div class="col-12 col-lg-6 order-2 order-lg-1">
-        <h1>Contact </h1>
-        <p>Contactez-nous dès maintenant pour obtenir un devis gratuit et commencer à planifier votre déménagement en
-          toute tranquillité !</p>
-        <h3>+32 489 58 19 59</h3>
-        <h3>contact2move@gmail.com</h3>
-      </div>
-      <div class="col-12 col-lg-6 order-1 order-lg-2">
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid">
+  <div class="container-fluid p-y">
     <div class="container-lg">
 
       <div id="gallery-lightbox" class="row" data-toggle="modal" data-target="#exampleModal">
@@ -402,16 +329,24 @@
             <img class="w-100" src="img/gal/10.jpg" alt="First slide" data-target="#carouselExample" data-slide-to="0">
           </a>
         </div>
-
- 
       </div>
-      <a href="#" id="loadMore">voir plus d'image</a>
+
+      <div class="mtm-button order-3">
+
+        <button type="button" class="mtm-btn">
+          <a href="#" id="loadMore" type="button" class="mtm-btn">
+            Voir plus d'image
+          </a>
+        </button>
+      </div>
     </div>
 
 
 
   </div>
-  </div>
+
+
+
 
 
 
@@ -424,22 +359,43 @@
 
 
   <footer>
-    <div class="container-fluid ">
-      <div class="container-lg" margin-bottom:="" 0px;="" style="margin-bottom: 0px;">
-        <div class="row mtm-footer-row">
-          <div class="col-12 col-lg-6 mtm-footer">
-            <p>Copyright © 2023 <br>
-              <span>Move 2 move</span> TVA: BE0797.984.158
-              <br>Chaussée de Malines 455 bte 1<br>
-              1950 Kraainem <br>
-            </p>
+
+    <div class="container-fluid p-y">
+      <div class="container-lg p-b-0">
+        <div class="row jleft">
+          <div class="col-12 col-lg-4">
+            <a href="#" id="image-link"><img src="img/LogoNoir.svg" alt="Logo" /></a>
+            <p>Copyright © 2023</p>
           </div>
-          <div class="col-12 col-lg-6 mtm-footer">
-            <p>Tél:<span>+32 489 58 19 59</span><br>E-mail: <span>contact2move@gmail.com</span></p>
+          <div class="col-12 col-lg-8">
+            <div class="row mtm-footer-row">
+
+              <div class="col-6 jleft mtm-footer">
+                <h5>Contact</h5>
+                <p class="footertext">
+                  Tél:<span>+32 489 58 19 59</span><br>
+                  E-mail: <span>contact2move@gmail.com</span>
+                </p>
+                <div class="row">
+                  <a href="#" class="icon"><img src="/img/icon/facebooksvg.svg" alt="facebook" /></a>
+                  <a href="#" class="icon"><img src="/img/icon/instagram.svg" alt="instagram" /></a>
+                </div>
+              </div>
+
+              <div class="col-6 jleft mtm-footer">
+                <h5>Information</h5>
+                <p class="footertext">
+                  <span>Move 2 move</span> TVA: BE0797.984.158
+                  <br>Chaussée de Malines 455 bte 1<br>
+                  1950 Kraainem <br>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </footer>
 </body>
 
