@@ -1,32 +1,36 @@
 @media (min-width: 1200px) {
-    $bleuClair: #161e3f;
-    $bleu: #07163e;
-    $orange: #eb352e;
-    $orangeClaire: #ec8375;
-    
+  $bleuClair: #161e3f;
+  $bleu: #07163e;
+  $orange: #eb352e;
+  $orangeClaire: #ec8375;
 
-    h1 {
-      font-size: 128px;
-      font-weight: 600;
-      font-family: 'Sintony', sans-serif;
-    }
-    
-    h2 {
-      font-size: 96px;
-      font-weight: 600;
-      font-family: 'Sintony', sans-serif;
-    }
-    
-    h3 {
-      font-size: 48px;
-      font-weight: 300;
-      font-family: 'Sintony', sans-serif;
-    }
 
-    h4 {
-        font-size: 20px;
-        font-weight: 300px;
-        font-family: 'Sintony', sans-serif;
-      }
+  h1 {
+    font-size: 128px;
+    font-weight: 600;
+    font-family: 'Sintony', sans-serif;
+  }
+
+  h2 {
+    font-size: 96px;
+    font-weight: 600;
+    font-family: 'Sintony', sans-serif;
+  }
+
+  h3 {
+    font-size: 48px;
+    font-weight: 300;
+    font-family: 'Sintony', sans-serif;
+  }
+
+  h4 {
+    font-size: 40px;
+    font-weight: 300px;
+    font-family: 'Sintony', sans-serif;
+  }
+
+  p {
+    font-size: 20px;
+
+  }
 }
-  

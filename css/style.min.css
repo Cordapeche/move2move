@@ -10813,6 +10813,12 @@ a {
   text-decoration: none;
 }
 
+.contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #normal-header {
   display: none;
 }
@@ -10823,10 +10829,12 @@ a:hover {
 
 .active-menu-links {
   color: #eb352e;
+  font-weight: bolder;
 }
 
 .active {
   color: #eb352e !important;
+  font-weight: 900;
 }
 
 #responsive-header {
@@ -10963,6 +10971,22 @@ a:hover {
   color: white;
 }
 
+.mtm-btn2 {
+  background-color: #eb352e;
+  color: white;
+  border: 0px;
+}
+.mtm-btn2:hover {
+  background-color: #ec8375;
+}
+.mtm-btn2 a {
+  color: white;
+}
+
+.noContent {
+  display: none;
+}
+
 .m2m-copyright {
   font-size: x-small;
   display: flex;
@@ -10972,10 +10996,6 @@ a:hover {
   color: gray;
   position: absolute;
   top: -60px;
-}
-
-.card-body {
-  padding-left: 0;
 }
 
 .container-lg {
@@ -10996,16 +11016,50 @@ ul {
   justify-content: center;
 }
 
+.mtm-body h1, .mtm-body .h1, .mtm-body h2, .mtm-body .h2, .mtm-body p {
+  color: #161e3f;
+}
+
 .backimg-mtm {
   width: auto;
   height: 50vh;
-  /* hero-header flexbox */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* Background image */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/cover.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/covers/cover.png");
+  background-position: fixed;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  z-index: -9999;
+}
+
+.mtm-apropos {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/covers/mtm-apropos-picture.jpg");
+  background-position: fixed;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  z-index: -9999;
+}
+
+.mtm-contact {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/covers/mtm-contact-piture.jpg");
   background-position: fixed;
   color: white;
   position: relative;
@@ -11097,8 +11151,13 @@ ul {
      object-fit: cover;
 }
 
-.card-text {
-  font-size: medium;
+.card-text span {
+  color: #ec8375;
+}
+
+.card-body {
+  padding-left: 0;
+  margin-top: 15px;
 }
 
 .form-control {
@@ -11138,6 +11197,22 @@ footer {
   width: 50%;
 }
 
+.icon img {
+  height: 35px;
+  width: 35px;
+}
+.icon img:hover {
+  height: 37px;
+  width: 37px;
+}
+
+footer a, .mtm-body a, .contactus a {
+  color: #eb352e;
+}
+footer a:hover, .mtm-body a:hover, .contactus a:hover {
+  color: #ec8375;
+}
+
 @media (min-width: 992px) {
   h1, .h1 {
     font-size: 96px;
@@ -11150,17 +11225,20 @@ footer {
     font-weight: 600;
   }
   h3, .h3 {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 300;
     font-family: "Sintony", sans-serif;
   }
   h4, .h4 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300px;
     font-family: "Sintony", sans-serif;
   }
   p {
-    font-size: 15px;
+    font-size: 18px;
+  }
+  .mtm-txt-lenght {
+    max-width: 600px;
   }
   #header {
     position: fixed;
@@ -11262,8 +11340,11 @@ footer {
     font-family: "Sintony", sans-serif;
   }
   h4, .h4 {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 300px;
     font-family: "Sintony", sans-serif;
+  }
+  p {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.min.css.map */

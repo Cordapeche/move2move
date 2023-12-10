@@ -12,11 +12,11 @@
     content="déménagement, société de déménagement, service de déménagement, déménagement local, déménagement international, déménageurs professionnels, emballage et déballage, transport, logistique, démontage et montage de meubles, assurance déménagement, déménagement résidentiel, déménagement commercial" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/img/LogoOnglet.ico">
   <link rel="stylesheet" type="text/css" href="/css/lightbox.css" />
-
+  <link href="css/validetta.css" rel="stylesheet" type="text/css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/loco.css" />
   <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
 </head>
@@ -45,7 +45,7 @@
             <a href="/contact.html" class="menu-link active">Contact</a>
           </li>
           <li class="nav-link phone" id="menu-item">
-            <a href="/" class="menu-link">+32 489 58 19 59</a>
+            <a href="tel:+32489581959" class="menu-link">+32 489 58 19 59</a>
           </li>
         </ul>
       </nav>
@@ -79,14 +79,14 @@
           </ul>
         </div>
 
-        <div class="contactus">
-          <ul>
+        <div>
+          <ul class="contactus">
             <li class="nav-link" id="responsive-home-item">
-              <h3>Contactez nous</h3><br><br>
-            <li class="nav-link phone">
-              <a href="/" class="responsive-menu-link">+32 489 58 19 59</a>
+              <h3>Contactez-nous</h3>
+            <li class="nav-link">
+              <a href="tel:+32489581959" class="responsive-menu-link">+32 489 58 19 59</a>
             </li>
-            <p class="responsive-menu-link">contact2move@gmail.com</p>
+            <a href="mailto:contact2move@gmail.com" class="responsive-menu-link">contact2move@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -98,152 +98,135 @@
   </header>
 
 
-  <div class="container-full mtm-services">
+  <div class="container-full mtm-contact">
     <div class="container-lg">
       <div class="row">
         <div class="col-12 lg-6 home-text">
           <h1>Nos <span>services</span></h1>
-          <p>Nous sommes là pour rendre votre déménagement facile, rapide et sans stress. Nous sommes votre service de
+          <p class="mtm-txt-lenght">Nous sommes là pour rendre votre déménagement facile, rapide et sans stress. Nous sommes votre service de
             déménagement de confiance et nous nous engageons à vous fournir un service de qualité supérieure.</p>
         </div>
         <div class="col-12 lg-6"></div>
       </div>
     </div>
   </div>
-
-  <div class="container-fluid p-y">
-    <div class="container-lg" id="contact">
-      <div class="row">
-        <div class="col-12 col-lg-6 order-1 order-lg-2">
-          <h2>Contact </h2>
-          <p>Contactez-nous dès maintenant pour obtenir un devis gratuit et commencer à planifier votre déménagement en
-            toute tranquillité !</p>
-          <h4>+32 489 58 19 59</h4>
-          <h4>contact2move@gmail.com</h4>
-        </div>
-        <div class="col-12 col-lg-6 order-2 order-lg-2">
-          <div class="col-12 col-lg-6 order-1 order-lg-2">
+  <div class="mtm-body">
+    <div class="container-fluid p-y">
+      <div class="container-lg" id="contact">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 order-lg-2">
+            <h2>Contact </h2>
+            <p>Contactez-nous dès maintenant pour obtenir un devis gratuit et commencer à planifier votre déménagement
+              en
+              toute tranquillité !</p>
+            <h4 class=""><a href="tel:0489581959">+32 489 58 19 59</a></h4>
+            <h4><a href="mailto:contact2move@gmail.com">contact2move@gmail.com</a></h4>
+          </div>
+          <div class="col-12 col-lg-6 order-1 order-lg-1">
             <div class="decohome">
-              <img src="/img/anim/contact.gif" alt="" class="gif" />
+              <img src="/img/anim/contact.gif" alt="" />
               <p class="m2m-copyright">
                 <a href="https://storyset.com/user">User illustrations by Storyset</a>
               </p>
-  
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container-fluid p-y">
-    <div class="container-lg" id="contact">
-      <div class="row">
-        <div class="col-12 col-lg-6 order-1 order-lg-2">
-          <div class="decohome">
-            <img src="/img/anim/Moving.gif" alt="" class="gif" />
-            <p class="m2m-copyright">
-              <a href="https://storyset.com/user">User illustrations by Storyset</a>
-            </p>
-
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 order-2 order-lg-2">
-          <form action="#" class="contact-form form-validate" novalidate="novalidate">
-            <div class="row">
-
-              <div class="col-sm-6 mb-3">
-                <div class="form-group">
-                  <label class="required-field" for="firstName">Prénom</label>
-                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nom">
-                </div>
-              </div>
-
-              <div class="col-sm-6 mb-3">
-                <div class="form-group">
-                  <label for="lastName">Nom</label>
-                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Prénom">
-                </div>
-              </div>
-
-              <div class="col-sm-6 mb-3">
-                <div class="form-group">
-                  <label class="required-field" for="email">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="votre@email.com">
-                </div>
-              </div>
-
-              <div class="col-sm-6 mb-3">
-                <div class="form-group">
-                  <label for="phone">Téléphone</label>
-                  <input type="tel" class="form-control" id="phone" name="phone" placeholder="+32 00 000 00">
-                </div>
-              </div>
-
-              <div class="col-sm-12 mb-3">
-                <div class="form-group">
-                  <label class="required-field" for="message">Comment pouvons-nous vous aider ?</label>
-                  <textarea class="form-control" id="message" name="message" rows="10"
-                    placeholder="Bonjour, j'aimerais…"></textarea>
-                </div>
-              </div>
-
-              <div class="col-sm-12 mb-3 mtm-button order-3">
-                <button type="submit" name="submit" class="mtm-btn">Envoyer</button>
-              </div>
-              
-              
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="container-fluid p-y">
-    <div class="container-lg">
-      <div class="row">
-
-        <div class="col-12 col-lg-6 order-2">
-        
-        </div>
-
-        <div class="col-12 col-lg-6 order-1">
-
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- JavaScript/jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/lightbox-plus-jquery.js"></script>
-  <script src="js/script.js"></script>
-
-
-
-  <footer>
 
     <div class="container-fluid p-y">
+      <div class="container-lg" id="contact">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <div class="decohome">
+              <img src="/img/anim/Moving.gif" alt="" />
+              <p class="m2m-copyright">
+                <a href="https://storyset.com/user">User illustrations by Storyset</a>
+              </p>
+
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <form method="post" id="form" action="#" class="contact-form form-validate" novalidate="novalidate">
+              <div class="row">
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="firstName">Prénom</label>
+                    <input type="text" data-validetta="required" class="form-control" id="firstName" name="firstName"
+                      placeholder="Nom">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label for="firstName">Nom</label>
+                    <input type="text" data-validetta="required" class="form-control" id="lastName" name="lastName"
+                      placeholder="Prénom">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="email">Email</label>
+                    <input type="text" class="form-control" data-validetta="required,email" id="email" name="email"
+                      placeholder="votre@email.com">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="+32 (0)489 58 19 59">
+                  </div>
+                </div>
+
+                <div class="col-sm-12 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="message">Comment pouvons-nous vous aider ?</label>
+                    <textarea class="form-control" data-validetta="required" id="message" name="message" rows="10"
+                      placeholder="Bonjour, j'aimerais…"></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 mb-3 mtm-button order-3">
+                  <button type="submit" name="submit" class="mtm-btn">Envoyer</button>
+                </div>
+
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid p-y">
       <div class="container-lg p-b-0">
-        <div class="row jleft">
-          <div class="col-12 col-lg-4">
-            <a href="#" id="image-link"><img src="img/LogoNoir.svg" alt="Logo" /></a>
+        <div class="row mtm-footer-row jleft">
+          <div class="col-12 col-lg-4 footerlogo">
+            <a href="/index.html">
+              <img src="img/LogoBlancFooter.svg" class="mtmfooterlogo" alt="Logo" />
+            </a>
             <p>Copyright © 2023</p>
           </div>
           <div class="col-12 col-lg-8">
-            <div class="row mtm-footer-row">
+            <div class="row">
 
               <div class="col-6 jleft mtm-footer">
                 <h5>Contact</h5>
                 <p class="footertext">
-                  Tél:<span>+32 489 58 19 59</span><br>
-                  E-mail: <span>contact2move@gmail.com</span>
+                  Tél: <span><a href="tel:0489581959">+32 489 58 19 59</a></span><br>
+                  E-mail: <a href="mailto:contact2move@gmail.com"><span>contact2move@gmail.com</span></a>
                 </p>
                 <div class="row">
-                  <a href="#" class="icon"><img src="/img/icon/facebooksvg.svg" alt="facebook" /></a>
-                  <a href="#" class="icon"><img src="/img/icon/instagram.svg" alt="instagram" /></a>
+                  <a href="https://www.facebook.com/people/m2m" target="_blank" class="col-2 icon">
+                    <img src="/img/icons/facebook.svg" alt="facebook" />
+                  </a>
+                  <a href="https://www.instagram.com/m2m/" target="_blank" class="col-2 icon">
+                    <img src="/img/icons/instagram.svg" alt="instagram" />
+                  </a>
                 </div>
               </div>
 
@@ -260,8 +243,15 @@
         </div>
       </div>
     </div>
-
   </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/validetta.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
