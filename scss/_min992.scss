@@ -143,4 +143,18 @@ p {
   .decohome {
     display: block;
   }
+
+  .m2m-copyright {
+    font-size: x-small;
+    display: flex;
+    // background-color: #ff5a6e;
+    position: relative;
+  
+    a {
+      color: gray!important;
+      position: absolute;
+      top: -60px;
+      right: 400px;
+    }
+  }
 }

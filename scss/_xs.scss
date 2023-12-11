@@ -54,7 +54,7 @@ span {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
 
 }
 
@@ -272,9 +272,10 @@ a:hover {
   position: relative;
 
   a {
-    color: gray;
+    color: gray!important;
     position: absolute;
-    top: -60px;
+    bottom: 20px;
+    right: 400px;
   }
 }
 
@@ -458,6 +459,10 @@ ul {
 .card-body {
   padding-left: 0;
   margin-top: 15px;
+}
+
+.p-y-12 {
+  margin-bottom: 20px;
 }
 
 // SERVICES -------------------------------------- END

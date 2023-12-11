@@ -10806,7 +10806,7 @@ span {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 a {
@@ -10993,9 +10993,10 @@ a:hover {
   position: relative;
 }
 .m2m-copyright a {
-  color: gray;
+  color: gray !important;
   position: absolute;
-  top: -60px;
+  bottom: 20px;
+  right: 400px;
 }
 
 .container-lg {
@@ -11160,6 +11161,10 @@ ul {
   margin-top: 15px;
 }
 
+.p-y-12 {
+  margin-bottom: 20px;
+}
+
 .form-control {
   border-radius: 0px;
   border: 2px solid #07163e;
@@ -11321,6 +11326,17 @@ footer a:hover, .mtm-body a:hover, .contactus a:hover {
   }
   .decohome {
     display: block;
+  }
+  .m2m-copyright {
+    font-size: x-small;
+    display: flex;
+    position: relative;
+  }
+  .m2m-copyright a {
+    color: gray !important;
+    position: absolute;
+    top: -60px;
+    right: 400px;
   }
 }
 @media (min-width: 1200px) {
