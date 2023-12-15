@@ -10763,7 +10763,6 @@ textarea.form-control-lg {
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 * {
@@ -10775,6 +10774,7 @@ body {
   width: auto;
   height: auto;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
@@ -10802,7 +10802,7 @@ h4, .h4 {
 }
 
 span {
-  color: #eb352e;
+  color: #e11624;
 }
 
 p {
@@ -10824,16 +10824,16 @@ a {
 }
 
 a:hover {
-  color: #eb352e;
+  color: #e11624;
 }
 
 .active-menu-links {
-  color: #eb352e;
+  color: #e11624;
   font-weight: bolder;
 }
 
 .active {
-  color: #eb352e !important;
+  color: #e11624 !important;
   font-weight: 900;
 }
 
@@ -10917,7 +10917,7 @@ a:hover {
 }
 
 .phone {
-  background-color: #eb352e;
+  background-color: #e11624;
 }
 .phone .active-menu-links {
   color: #fff;
@@ -10937,6 +10937,14 @@ a:hover {
 
 .p-y {
   margin-top: 100px;
+  padding: 0px;
+}
+
+.mtm-btn-readmore {
+  border: 0px;
+  text-decoration: underline;
+  background-color: white;
+  color: #e11624;
 }
 
 .btn-mtm {
@@ -10961,7 +10969,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eb352e;
+  background-color: #e11624;
   color: white;
 }
 .mtm-btn:hover {
@@ -10971,8 +10979,13 @@ a:hover {
   color: white;
 }
 
+.mtm-btnl {
+  display: flex;
+  justify-content: end;
+}
+
 .mtm-btn2 {
-  background-color: #eb352e;
+  background-color: #e11624;
   color: white;
   border: 0px;
 }
@@ -11017,8 +11030,15 @@ ul {
   justify-content: center;
 }
 
-.mtm-body h1, .mtm-body .h1, .mtm-body h2, .mtm-body .h2, .mtm-body p {
+.mtm-body h1, .mtm-body .h1,
+.mtm-body h2,
+.mtm-body .h2,
+.mtm-body p {
   color: #161e3f;
+}
+
+#more {
+  display: none;
 }
 
 .backimg-mtm {
@@ -11147,7 +11167,8 @@ ul {
   margin-bottom: 10px;
 }
 .mtm-services-pitures img {
-  height: 300px;
+  width: 100%;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -11170,8 +11191,8 @@ ul {
   border: 2px solid #07163e;
 }
 .form-control:focus {
-  box-shadow: 0 0 0 0.25rem #eb352e;
-  border: 2px solid #eb352e;
+  box-shadow: 0 0 0 0.25rem #e11624;
+  border: 2px solid #e11624;
 }
 .form-control:hover {
   box-shadow: 0 0 0 0.25rem #ec8375;
@@ -11211,11 +11232,19 @@ footer {
   width: 37px;
 }
 
-footer a, .mtm-body a, .contactus a {
-  color: #eb352e;
+footer a,
+.mtm-body a,
+.contactus a {
+  color: #e11624;
 }
-footer a:hover, .mtm-body a:hover, .contactus a:hover {
+footer a:hover,
+.mtm-body a:hover,
+.contactus a:hover {
   color: #ec8375;
+}
+
+.TextReadMore span {
+  color: #07163e !important;
 }
 
 @media (min-width: 992px) {

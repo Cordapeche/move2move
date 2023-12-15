@@ -7,7 +7,7 @@ $phone = $_POST['phone'];
 $mes = $_POST['message'];
 
 
-$to      = 'contact2move@gmail.com';
+$to      = 'sadkaizo@outlook.com';
 $subject = $nom + $prenom;
 $message = $mes;
 $headers = 'From: '.$mail + $phone . "\r\n" .
